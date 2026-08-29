@@ -1,0 +1,89 @@
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Node / build
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Composer vendor (do not commit vendor packages; keep .htaccess if present)
+vendor/*
+!vendor/.htaccess
+
+# PHP / project config and secrets (local config files containing DB / secret keys)
+config.php
+config.inc.php
+config.db.php
+config.csrf-secret.php
+config.security.php
+config.template.php
+config_override.php
+config_override.*.php
+config_override.dev.php
+config_override.sample.php
+
+# vtiger runtime / generated files
+cache/
+cache/*
+!cache/index.html
+storage/
+logs/
+logs/*
+output.txt
+
+# User data, uploads and temporary import files
+upload/
+uploads/
+import/
+kcfinder/upload/
+kcfinder/config.php
+
+# Webserver / session / temp
+*/tmp/
+*/sessions/
+tmp/
+sessions/
+
+# Database dumps and local DB files
+*.sql
+*.sql.gz
+*.sqlite
+*.sqlite3
+
+# Backups and generated archives
+*.bak
+*.backup
+*.zip
+*.tar.gz
+*.tgz
+
+# Logs, caches, runtime files
+*.log
+*.cache
+*.tmp
+
+# Tests / coverage
+coverage/
+phpunit.xml
+phpunit.xml.dist
+
+# Operating system files
+ehthumbs.db
+Icon?
+
+# Misc
+.env
+.env.*
+.secret
+.htpasswd
+
+# Keep composer lock in repo (optional). Uncomment to ignore:
+# composer.lock
