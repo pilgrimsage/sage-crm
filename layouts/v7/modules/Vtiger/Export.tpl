@@ -76,7 +76,7 @@
 									<br>
 									<div class="row"> 
 										<div class="col-lg-8 col-md-8 col-lg-pull-0"><strong>{vtranslate('LBL_EXPORT_LINEITEM_CURRENCY',$MODULE)}:&nbsp;</strong>
-											<i style="position:relative;top:4px;" class="icon-question-sign" data-toggle="tooltip" title="{vtranslate('LBL_EXPORT_CURRENCY_TOOLTIP_TEXT',$MODULE)}"></i>
+											<i style="position:relative;top:4px;" class="icon-question-sign" data-bs-toggle="tooltip" title="{vtranslate('LBL_EXPORT_CURRENCY_TOOLTIP_TEXT',$MODULE)}"></i>
 										</div>
 									</div>
 									<br>

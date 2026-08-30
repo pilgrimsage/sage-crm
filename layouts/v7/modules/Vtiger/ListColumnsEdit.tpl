@@ -56,7 +56,7 @@
 												{assign var=RAND_ID value=10|mt_rand:1000}
 												<div class="instafilta-section">
 													<div id="{$RAND_ID}_accordion" class="availFieldBlock" role="tab">
-														<a class="fieldLabel" data-toggle="collapse" data-parent="#accordion" href="#{$RAND_ID}">
+														<a class="fieldLabel" data-bs-toggle="collapse" data-parent="#accordion" href="#{$RAND_ID}">
 															<i class="fa fa-caret-right"></i><span>{vtranslate($BLOCK_LABEL, $SOURCE_MODULE)}</span>
 														</a>
 													</div>

@@ -40,7 +40,7 @@
 									{if $PERMISSIONS && $FIELD_MODEL->isEditable()}
 										<span class="col-lg-6">
 											<div class="dropdown float-start">
-												<a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fieldValue">{$RELATED_RECORD->getDisplayValue('projecttaskprogress')}</span>&nbsp;<b class="caret"></b></a>
+												<a href="#" data-bs-toggle="dropdown" class="dropdown-toggle"><span class="fieldValue">{$RELATED_RECORD->getDisplayValue('projecttaskprogress')}</span>&nbsp;<b class="caret"></b></a>
 												<ul class="dropdown-menu widgetsList" data-recordid="{$RELATED_RECORD->getId()}" data-fieldname="projecttaskprogress" 
                                                     data-old-value="{$RELATED_RECORD->getDisplayValue('projecttaskprogress')}" data-mandatory="{$FIELD_MODEL->isMandatory()}">
 													{assign var=PICKLIST_VALUES value=$FIELD_MODEL->getPicklistValues()}
@@ -65,7 +65,7 @@
 									{if $PERMISSIONS && $FIELD_MODEL->isEditable()}
 										<span class="col-lg-6 nav nav-pills">
 											<div class="dropdown float-start">
-												<a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fieldValue">{$RELATED_RECORD->getDisplayValue('projecttaskstatus')}</span>&nbsp;<b class="caret"></b></a>
+												<a href="#" data-bs-toggle="dropdown" class="dropdown-toggle"><span class="fieldValue">{$RELATED_RECORD->getDisplayValue('projecttaskstatus')}</span>&nbsp;<b class="caret"></b></a>
 												<ul class="dropdown-menu widgetsList float-end" data-recordid="{$RELATED_RECORD->getId()}" data-fieldname="projecttaskstatus" 
 													data-old-value="{$RELATED_RECORD->getDisplayValue('projecttaskstatus')}" data-mandatory="{$FIELD_MODEL->isMandatory()}" style="max-height: 200px; left: -64px;">
 													{assign var=PICKLIST_VALUES value=$FIELD_MODEL->getPicklistValues()}

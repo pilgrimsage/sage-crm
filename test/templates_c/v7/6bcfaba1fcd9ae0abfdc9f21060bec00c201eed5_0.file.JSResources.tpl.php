@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.5, created on 2026-08-30 07:39:18
+/* Smarty version 4.5.5, created on 2026-08-30 14:03:00
   from '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/JSResources.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.5',
-  'unifunc' => 'content_6a93de2626f5e1_47031063',
+  'unifunc' => 'content_6a9438143ae0f2_37647931',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6bcfaba1fcd9ae0abfdc9f21060bec00c201eed5' => 
     array (
       0 => '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/JSResources.tpl',
-      1 => 1788075253,
+      1 => 1788079971,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6a93de2626f5e1_47031063 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6a9438143ae0f2_37647931 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/jquery/purl.js');?>
 "><?php echo '</script'; ?>
@@ -37,7 +37,7 @@ echo '<script'; ?>
  type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/todc/js/popper.min.js');?>
 "><?php echo '</script'; ?>
 ><?php echo '<script'; ?>
- type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/modern/plugins/bootstrap-5.3.8-dist/js/bootstrap.min.js');?>
+ type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/modern/plugins/bootstrap-5.3.8-dist/js/bootstrap.bundle.js');?>
 "><?php echo '</script'; ?>
 ><?php echo '<script'; ?>
  type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/jquery/jquery-validation/jquery.validate.min.js');?>
@@ -165,7 +165,7 @@ echo '<script'; ?>
 ><!-- Enable tracking pageload time --><?php echo '<script'; ?>
  type="text/javascript">var _REQSTARTTIME = "<?php echo $_SERVER['REQUEST_TIME'];?>
 ";jQuery(document).ready(function() { window._PAGEREADYAT = new Date(); });
-		jQuery(window).load(function() {
+		jQuery(window).on('load', function() {
 			window._PAGELOADAT = new Date();
 			window._PAGELOADREQSENT = false;
 			// Transmit the information to server about page render time now.

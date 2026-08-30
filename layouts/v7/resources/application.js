@@ -168,18 +168,23 @@ window.app = (function () {
 			},
 			get: function (key, defvalue) {
 				key = this.NSKey(key);
-				return jQuery.jStorage.get(key, defvalue);
+				var raw = localStorage.getItem(key);
+				if (raw === null) return defvalue;
+				try { return JSON.parse(raw); } catch (e) { return raw; }
 			},
 			set: function (key, value) {
 				key = this.NSKey(key);
-				jQuery.jStorage.set(key, value);
+				localStorage.setItem(key, JSON.stringify(value));
 			},
 			delete: function (key) {
 				key = this.NSKey(key);
-				jQuery.jStorage.deleteKey(key);
+				localStorage.removeItem(key);
 			},
 			flush: function () {
-				jQuery.jStorage.flush();
+				var prefix = 'vtiger6.';
+				Object.keys(localStorage).forEach(function(k) {
+					if (k.indexOf(prefix) === 0) localStorage.removeItem(k);
+				});
 			}
 		},
 		request: new Request(),

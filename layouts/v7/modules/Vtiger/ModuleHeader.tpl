@@ -54,7 +54,7 @@
 						{if $MODULE_BASIC_ACTIONS|@count gt 0}
 						<div class="container-fluid">
 							<div class="navbar-header bg-white marginTop5px">
-								<button type="button" class="navbar-toggle collapsed margin0" data-toggle="collapse" data-target="#appnavcontent" aria-expanded="false">
+								<button type="button" class="navbar-toggle collapsed margin0" data-bs-toggle="collapse" data-bs-target="#appnavcontent" aria-expanded="false">
 									<i class="fa fa-ellipsis-v"></i>
 								</button>
 							</div>
@@ -91,7 +91,7 @@
 									{if $MODULE_SETTING_ACTIONS|@count gt 0}
 										<li>
 											<div class="settingsIcon">
-												<button type="button" class="btn btn-default module-buttons dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="{vtranslate('LBL_SETTINGS', $MODULE)}">
+												<button type="button" class="btn btn-default module-buttons dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" title="{vtranslate('LBL_SETTINGS', $MODULE)}">
 													<span class="fa fa-wrench" aria-hidden="true"></span>&nbsp;{vtranslate('LBL_CUSTOMIZE', 'Reports')}&nbsp; <span class="caret"></span>
 												</button>
 												<ul class="detailViewSetting dropdown-menu">

@@ -42,7 +42,7 @@
 											<span class="col-sm-10 paddingLeft0"><p class="textOverflowEllipsis">{$TO_EMAILS}</p></span>
 											{if $TO|@count > 1}
 												<span class="col-sm-2">
-													<a href="#" data-toggle="dropdown" style="text-transform: lowercase;">{vtranslate('LBL_MORE',$MODULE)}</a>
+													<a href="#" data-bs-toggle="dropdown" style="text-transform: lowercase;">{vtranslate('LBL_MORE',$MODULE)}</a>
 													<ul class="dropdown-menu" style="padding:3px 6px; max-height:200px;" id="toAddressesDropdown">
 														{foreach item=TO_ADDRESS from=$TO}
 															<li>{$TO_ADDRESS}</li>

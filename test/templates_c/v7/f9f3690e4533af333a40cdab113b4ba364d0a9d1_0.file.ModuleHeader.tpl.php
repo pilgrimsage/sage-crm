@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.5, created on 2026-08-29 18:57:52
+/* Smarty version 4.5.5, created on 2026-08-30 14:03:00
   from '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/ModuleHeader.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.5',
-  'unifunc' => 'content_6a932bb03788e0_51649412',
+  'unifunc' => 'content_6a943814368a55_09152550',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f9f3690e4533af333a40cdab113b4ba364d0a9d1' => 
     array (
       0 => '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/ModuleHeader.tpl',
-      1 => 1752039682,
+      1 => 1788096751,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6a932bb03788e0_51649412 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6a943814368a55_09152550 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/vendor/smarty/smarty/libs/plugins/modifier.count.php','function'=>'smarty_modifier_count',),));
 ?>
 
@@ -40,7 +40,7 @@ $_smarty_tpl->_assignInScope('DEFAULT_FILTER_URL', $_smarty_tpl->tpl_vars['MODUL
 }?><a title="<?php echo vtranslate($_smarty_tpl->tpl_vars['MODULE']->value,$_smarty_tpl->tpl_vars['MODULE']->value);?>
 " href='<?php echo $_smarty_tpl->tpl_vars['DEFAULT_FILTER_URL']->value;?>
 &app=<?php echo $_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value;?>
-'><h4 class="module-title pull-left text-uppercase"> <?php echo vtranslate($_smarty_tpl->tpl_vars['MODULE']->value,$_smarty_tpl->tpl_vars['MODULE']->value);?>
+'><h4 class="module-title float-start text-uppercase"> <?php echo vtranslate($_smarty_tpl->tpl_vars['MODULE']->value,$_smarty_tpl->tpl_vars['MODULE']->value);?>
  </h4>&nbsp;&nbsp;</a><?php if ((isset($_SESSION['lvs'])) && (isset($_SESSION['lvs'][$_smarty_tpl->tpl_vars['MODULE']->value])) && (isset($_SESSION['lvs'][$_smarty_tpl->tpl_vars['MODULE']->value]['viewname']))) {
 $_smarty_tpl->_assignInScope('VIEWID', $_SESSION['lvs'][$_smarty_tpl->tpl_vars['MODULE']->value]['viewname']);
 }
@@ -60,21 +60,21 @@ break 1;
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 }
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?><p class="current-filter-name filter-name pull-left cursorPointer" title="<?php echo $_smarty_tpl->tpl_vars['CVNAME']->value;?>
-"><span class="fa fa-angle-right pull-left" aria-hidden="true"></span><a href='<?php echo $_smarty_tpl->tpl_vars['MODULE_MODEL']->value->getListViewUrl();?>
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?><p class="current-filter-name filter-name float-start cursorPointer" title="<?php echo $_smarty_tpl->tpl_vars['CVNAME']->value;?>
+"><span class="fa fa-angle-right float-start" aria-hidden="true"></span><a href='<?php echo $_smarty_tpl->tpl_vars['MODULE_MODEL']->value->getListViewUrl();?>
 &viewname=<?php echo $_smarty_tpl->tpl_vars['VIEWID']->value;?>
 &app=<?php echo $_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value;?>
 '>&nbsp;&nbsp;<?php echo $_smarty_tpl->tpl_vars['CVNAME']->value;?>
 &nbsp;&nbsp;</a> </p><?php }
 $_smarty_tpl->_assignInScope('SINGLE_MODULE_NAME', ('SINGLE_').($_smarty_tpl->tpl_vars['MODULE']->value));
-if ((isset($_smarty_tpl->tpl_vars['RECORD']->value)) && $_smarty_tpl->tpl_vars['RECORD']->value && $_smarty_tpl->tpl_vars['REQ']->value->get('view') == 'Edit') {?><p class="current-filter-name filter-name pull-left "><span class="fa fa-angle-right pull-left" aria-hidden="true"></span><a title="<?php echo $_smarty_tpl->tpl_vars['RECORD']->value->get('label');?>
+if ((isset($_smarty_tpl->tpl_vars['RECORD']->value)) && $_smarty_tpl->tpl_vars['RECORD']->value && $_smarty_tpl->tpl_vars['REQ']->value->get('view') == 'Edit') {?><p class="current-filter-name filter-name float-start "><span class="fa fa-angle-right float-start" aria-hidden="true"></span><a title="<?php echo $_smarty_tpl->tpl_vars['RECORD']->value->get('label');?>
 ">&nbsp;&nbsp;<?php echo vtranslate('LBL_EDITING',$_smarty_tpl->tpl_vars['MODULE']->value);?>
  : <?php echo $_smarty_tpl->tpl_vars['RECORD']->value->get('label');?>
- &nbsp;&nbsp;</a></p><?php } elseif ($_smarty_tpl->tpl_vars['REQ']->value->get('view') == 'Edit') {?><p class="current-filter-name filter-name pull-left "><span class="fa fa-angle-right pull-left" aria-hidden="true"></span><a>&nbsp;&nbsp;<?php echo vtranslate('LBL_ADDING_NEW',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+ &nbsp;&nbsp;</a></p><?php } elseif ($_smarty_tpl->tpl_vars['REQ']->value->get('view') == 'Edit') {?><p class="current-filter-name filter-name float-start "><span class="fa fa-angle-right float-start" aria-hidden="true"></span><a>&nbsp;&nbsp;<?php echo vtranslate('LBL_ADDING_NEW',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 &nbsp;&nbsp;</a></p><?php }
-if ($_smarty_tpl->tpl_vars['REQ']->value->get('view') == 'Detail') {?><p class="current-filter-name filter-name pull-left"><span class="fa fa-angle-right pull-left" aria-hidden="true"></span><a title="<?php echo $_smarty_tpl->tpl_vars['RECORD']->value->get('label');?>
+if ($_smarty_tpl->tpl_vars['REQ']->value->get('view') == 'Detail') {?><p class="current-filter-name filter-name float-start"><span class="fa fa-angle-right float-start" aria-hidden="true"></span><a title="<?php echo $_smarty_tpl->tpl_vars['RECORD']->value->get('label');?>
 ">&nbsp;&nbsp;<?php echo $_smarty_tpl->tpl_vars['RECORD']->value->get('label');?>
- &nbsp;&nbsp;</a></p><?php }?></div><div class="col-lg-5 col-md-6 col-sm-7 col-xs-1 padding0 pull-right"><div id="appnav" class="navbar-right"><nav class="navbar navbar-inverse border0 margin0"><?php if (smarty_modifier_count($_smarty_tpl->tpl_vars['MODULE_BASIC_ACTIONS']->value) > 0) {?><div class="container-fluid"><div class="navbar-header bg-white marginTop5px"><button type="button" class="navbar-toggle collapsed margin0" data-toggle="collapse" data-target="#appnavcontent" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></button></div><div class="navbar-collapse collapse" id="appnavcontent" aria-expanded="false" style="height: 1px;"><ul class="nav navbar-nav"><?php
+ &nbsp;&nbsp;</a></p><?php }?></div><div class="col-lg-5 col-md-6 col-sm-7 col-xs-1 padding0 float-end"><div id="appnav" class="navbar-right"><nav class="navbar navbar-inverse border0 margin0"><?php if (smarty_modifier_count($_smarty_tpl->tpl_vars['MODULE_BASIC_ACTIONS']->value) > 0) {?><div class="container-fluid"><div class="navbar-header bg-white marginTop5px"><button type="button" class="navbar-toggle collapsed margin0" data-bs-toggle="collapse" data-bs-target="#appnavcontent" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></button></div><div class="navbar-collapse collapse" id="appnavcontent" aria-expanded="false" style="height: 1px;"><ul class="nav navbar-nav"><?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['MODULE_BASIC_ACTIONS']->value, 'BASIC_ACTION');
 $_smarty_tpl->tpl_vars['BASIC_ACTION']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['BASIC_ACTION']->value) {
@@ -95,7 +95,7 @@ _listView_basicAction_<?php echo Vtiger_Util_Helper::replaceSpaceWithUnderScores
 </button></li><?php }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
-if (smarty_modifier_count($_smarty_tpl->tpl_vars['MODULE_SETTING_ACTIONS']->value) > 0) {?><li><div class="settingsIcon"><button type="button" class="btn btn-default module-buttons dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="<?php echo vtranslate('LBL_SETTINGS',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+if (smarty_modifier_count($_smarty_tpl->tpl_vars['MODULE_SETTING_ACTIONS']->value) > 0) {?><li><div class="settingsIcon"><button type="button" class="btn btn-default module-buttons dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" title="<?php echo vtranslate('LBL_SETTINGS',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 "><span class="fa fa-wrench" aria-hidden="true"></span>&nbsp;<?php echo vtranslate('LBL_CUSTOMIZE','Reports');?>
 &nbsp; <span class="caret"></span></button><ul class="detailViewSetting dropdown-menu"><?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['MODULE_SETTING_ACTIONS']->value, 'SETTING');

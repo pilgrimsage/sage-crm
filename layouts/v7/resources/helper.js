@@ -63,7 +63,6 @@ jQuery.Class("Vtiger_Helper_Js",{
 	},
 },{
     init : function() {
-        this._initNotificationDefaults();
 		this.registerPostOverLayPageContentHideEvent();
     },
 
@@ -495,35 +494,7 @@ jQuery.Class("Vtiger_Helper_Js",{
         element.one('clickoutside',callbackFunction); 
     },
     
-    _initNotificationDefaults : function() {
-        if(jQuery('.module-action-bar').length) {
-            this.ERROR_DELAY = 1000;
-            var defaultSettings = {
-                    'element' : jQuery('body'),
-                    'offset' : {
-                        'x' : 50,
-                        'y' : 92 + jQuery('.module-action-bar').offset().top
-                    },
-                    'z_index' : 10003,
-                    'template' : '<div data-notify="container" class="col-xs-11 col-sm-3 vt-notification vt-notification-{0}" role="alert">' +
-                                    '<div class="notificationHeader">'+
-                                        '<button type="button" aria-hidden="true" class="close pull-right" data-notify="dismiss">×</button>' +
-                                        '<span data-notify="icon"></span> ' +
-                                        '<span data-notify="title">{1}</span> ' +
-                                    '</div>'+
-                                    '<div data-notify="message">{2}</div>' +
-                                    '<div class="progress" data-notify="progressbar">' +
-                                        '<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
-                                    '</div>' +
-                                    '<a href="{3}" target="{4}" data-notify="url"></a>' +
-                                '</div>',
-                    'delay' : 600,
-                    'animate' : 'null'
-                }
-            jQuery.notifyDefaults(defaultSettings);
-        }
-    },
-    
+        
     showAlertNotification : function(options,settings) {
         
         var defaultOptions = {

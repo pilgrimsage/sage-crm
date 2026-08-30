@@ -36,7 +36,7 @@
                                         {vtranslate('LBL_SELECT_FROM_AVAIL_TAG', $MODULE)}
                                     </label>
                                     <div class="dropdown">
-                                        <input class="form-control currentTagSelector dropdown-toggle" data-toggle="dropdown" placeholder="{vtranslate('LBL_SELECT_EXISTING_TAG',$MODULE)}" />
+                                        <input class="form-control currentTagSelector dropdown-toggle" data-bs-toggle="dropdown" placeholder="{vtranslate('LBL_SELECT_EXISTING_TAG',$MODULE)}" />
                                         <div class="dropdown-menu currentTagMenu">
                                             <div class="scrollable" style="max-height:300px">
                                                 <ul style="padding-left:0px;">

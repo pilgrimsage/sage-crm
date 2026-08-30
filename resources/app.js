@@ -936,15 +936,17 @@ var app = {
 	},
 	cacheGet: function(key, defvalue) {
 		key = this.cacheNSKey(key);
-		return jQuery.jStorage.get(key, defvalue);
+		var raw = localStorage.getItem(key);
+		if (raw === null) return defvalue;
+		try { return JSON.parse(raw); } catch (e) { return raw; }
 	},
 	cacheSet: function(key, value) {
 		key = this.cacheNSKey(key);
-		jQuery.jStorage.set(key, value);
+		localStorage.setItem(key, JSON.stringify(value));
 	},
-	cacheClear : function(key) {
+	cacheClear: function(key) {
 		key = this.cacheNSKey(key);
-		return jQuery.jStorage.deleteKey(key);
+		localStorage.removeItem(key);
 	},
 
 	htmlEncode : function(value){

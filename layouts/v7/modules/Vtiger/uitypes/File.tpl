@@ -22,7 +22,7 @@
 					{/if}
 					/>
 		</div>&nbsp;&nbsp;
-		<span class="uploadFileSizeLimit fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="{vtranslate('LBL_MAX_UPLOAD_SIZE',$MODULE)} {$MAX_UPLOAD_LIMIT_MB} {vtranslate('MB',$MODULE)}">
+		<span class="uploadFileSizeLimit fa fa-info-circle" data-bs-toggle="tooltip" data-placement="top" title="{vtranslate('LBL_MAX_UPLOAD_SIZE',$MODULE)} {$MAX_UPLOAD_LIMIT_MB} {vtranslate('MB',$MODULE)}">
 			<span class="maxUploadSize" data-value="{$MAX_UPLOAD_LIMIT_BYTES}"></span>
 		</span>
 		<div class="uploadedFileDetails {if $IS_EXTERNAL_LOCATION_TYPE}hide{/if}">

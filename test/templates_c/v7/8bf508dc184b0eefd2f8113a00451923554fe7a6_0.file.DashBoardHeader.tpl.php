@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.5, created on 2026-08-29 18:57:52
+/* Smarty version 4.5.5, created on 2026-08-30 14:03:00
   from '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/dashboards/DashBoardHeader.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.5',
-  'unifunc' => 'content_6a932bb03a4d25_41469715',
+  'unifunc' => 'content_6a9438143977b8_42626188',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8bf508dc184b0eefd2f8113a00451923554fe7a6' => 
     array (
       0 => '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/dashboards/DashBoardHeader.tpl',
-      1 => 1752039682,
+      1 => 1788096751,
       2 => 'file',
     ),
   ),
@@ -20,20 +20,20 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6a932bb03a4d25_41469715 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6a9438143977b8_42626188 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/vendor/smarty/smarty/libs/plugins/modifier.count.php','function'=>'smarty_modifier_count',),));
 ?>
 
 <div class='dashboardHeading container-fluid'>
-	<div class="buttonGroups pull-right">
+	<div class="buttonGroups float-end">
 		<div class="btn-group">
 			<?php if (smarty_modifier_count($_smarty_tpl->tpl_vars['SELECTABLE_WIDGETS']->value) > 0) {?>
-				<button class='btn btn-default addButton dropdown-toggle' data-toggle='dropdown'>
+				<button class='btn btn-default addButton dropdown-toggle' data-bs-toggle='dropdown'>
 					<?php echo vtranslate('LBL_ADD_WIDGET');?>
 &nbsp;&nbsp;<i class="caret"></i>
 				</button>
 
-				<ul class="dropdown-menu dropdown-menu-right widgetsList pull-right" style="min-width:100%;text-align:left;">
+				<ul class="dropdown-menu dropdown-menu-right widgetsList float-end" style="min-width:100%;text-align:left;">
 					<?php $_smarty_tpl->_assignInScope('MINILISTWIDGET', '');?>
 					<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['SELECTABLE_WIDGETS']->value, 'WIDGET');
@@ -88,7 +88,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
 				</ul>
 			<?php } elseif ($_smarty_tpl->tpl_vars['MODULE_PERMISSION']->value) {?>
-				<button class='btn btn-default addButton dropdown-toggle' disabled="disabled" data-toggle='dropdown'>
+				<button class='btn btn-default addButton dropdown-toggle' disabled="disabled" data-bs-toggle='dropdown'>
 					<strong><?php echo vtranslate('LBL_ADD_WIDGET');?>
 </strong> &nbsp;&nbsp;
 					<i class="caret"></i>

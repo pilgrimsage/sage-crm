@@ -11,7 +11,7 @@
 	{include file="modules/Vtiger/Header.tpl"}
 
 	{assign var=APP_IMAGE_MAP value=Vtiger_MenuStructure_Model::getAppIcons()}
-	<nav class="navbar navbar-inverse fixed-top app-fixed-navbar">
+	<nav class="navbar navbar-expand-lg navbar-inverse fixed-top app-fixed-navbar">
 		<div class="container-fluid global-nav">
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 app-navigator-container">
@@ -31,10 +31,10 @@
 					</div>
 				</div>
 				<div class="navbar-header paddingTop5">
-					<button type="button" class="navbar-toggle collapsed border0" data-bs-toggle="collapse" data-target="#navbar" aria-expanded="false">
+					<button type="button" class="navbar-toggler collapsed border0" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false">
 						<i class="fa fa-th"></i>
 					</button>
-					<button type="button" class="navbar-toggle collapsed border0" data-bs-toggle="collapse" data-target="#search-links-container" aria-expanded="false">
+					<button type="button" class="navbar-toggler collapsed border0" data-bs-toggle="collapse" data-bs-target="#search-links-container" aria-expanded="false">
 						<i class="fa fa-search"></i>
 					</button>
 				</div>

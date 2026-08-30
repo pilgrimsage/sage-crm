@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.5, created on 2026-08-30 07:39:18
+/* Smarty version 4.5.5, created on 2026-08-30 14:03:00
   from '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/partials/SidebarAppMenu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.5',
-  'unifunc' => 'content_6a93de26236ab9_91789354',
+  'unifunc' => 'content_6a94381433c6f1_21013121',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f3dc3579a80cfc1ba6b904041329f8382fd1fd3d' => 
     array (
       0 => '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/partials/SidebarAppMenu.tpl',
-      1 => 1788074367,
+      1 => 1788079378,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6a93de26236ab9_91789354 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6a94381433c6f1_21013121 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="app-menu hide" id="app-menu">
 	<div class="container-fluid">
@@ -79,7 +79,7 @@ _modules_dropdownMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expan
 "></span>
 								<span class="app-name textOverflowEllipsis"> <?php echo vtranslate("LBL_".((string)$_smarty_tpl->tpl_vars['APP_NAME']->value));?>
 </span>
-								<span class="fa fa-chevron-right pull-right"></span>
+								<span class="fa fa-chevron-right float-end"></span>
 							</div>
 						</div>
 						<ul class="dropdown-menu app-modules-dropdown" aria-labelledby="<?php echo $_smarty_tpl->tpl_vars['APP_NAME']->value;?>
@@ -153,7 +153,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 							<span class="app-name textOverflowEllipsis"> <?php echo vtranslate('LBL_SETTINGS','Settings:Vtiger');?>
 </span>
 							<?php if ($_smarty_tpl->tpl_vars['USER_MODEL']->value->isAdminUser()) {?>
-								<span class="fa fa-chevron-right pull-right"></span>
+								<span class="fa fa-chevron-right float-end"></span>
 							<?php }?>
 						</div>
 					</div>

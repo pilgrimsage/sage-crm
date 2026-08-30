@@ -48,16 +48,28 @@ body{
 	overflow:hidden;
 }
 
-/* caret — BS5 dropped .caret, rebuild with CSS triangle */
+/* BS5's .dropdown-toggle draws its own arrow via ::after.
+   Old markup still has literal <span class="caret">, which would double up — hide it. */
 .caret{
-	display:inline-block;
-	width:0;
-	height:0;
-	margin-left:4px;
-	vertical-align:middle;
-	border-top:4px solid var(--muted);
-	border-right:4px solid transparent;
-	border-left:4px solid transparent;
+	display:none;
+}
+
+/* navbar-expand-lg sets flex-wrap:nowrap, which forces the app's two stacked
+   nav rows (.global-nav top bar + .app-nav breadcrumb bar) onto one line,
+   splitting the width between them. Restore the intended vertical stacking. */
+.app-fixed-navbar.navbar-expand-lg{
+	flex-wrap:wrap !important;
+}
+
+/* BS3's .navbar-right floated right; has no effect in BS5. Push via flex margin instead. */
+.navbar-right{
+	margin-left:auto !important;
+}
+
+/* .nav is flex now, so float-end does nothing on flex children.
+   Push just the profile/user menu item to the far right explicitly. */
+#navbar .nav.navbar-nav > li:has(.userName){
+	margin-left:auto;
 }
 
 /* ---- table shell ---- */

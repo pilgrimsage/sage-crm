@@ -19,7 +19,7 @@
     <div class="btn-group float-end">
         <button type="button" id="PreviousPageButton" class="btn btn-default" {if !$PAGING_MODEL->isPrevPageExists()} disabled {/if}><i class="fa fa-caret-left"></i></button>
         {if $SHOWPAGEJUMP}
-            <button type="button" id="PageJump" data-toggle="dropdown" class="btn btn-default">
+            <button type="button" id="PageJump" data-bs-toggle="dropdown" class="btn btn-default">
                 <i class="fa fa-ellipsis-h icon" title="{vtranslate('LBL_LISTVIEW_PAGE_JUMP',$moduleName)}"></i>
             </button>
             <ul class="{$CLASS_VIEW_BASIC_ACTION} dropdown-menu" id="PageJumpDropDown">

@@ -11,7 +11,7 @@
 	<div class='related-tabs row'>
 		<nav class="navbar margin0" role="navigation">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle btn-group-justified collapsed border0" data-toggle="collapse" data-target="#nav-tabs" aria-expanded="false">
+				<button type="button" class="navbar-toggle btn-group-justified collapsed border0" data-bs-toggle="collapse" data-bs-target="#nav-tabs" aria-expanded="false">
 					<i class="fa fa-ellipsis-h"></i>
 				</button>
 			</div>
@@ -92,7 +92,7 @@
                                             {/if}
                                             {if $COUNT gt $LIMIT}
                                                     <li class="dropdown related-tab-more-element">
-                                                            <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">
+                                                            <a href="javascript:void(0)" data-bs-toggle="dropdown" class="dropdown-toggle">
                                                                     <span class="tab-label">
                                                                             <strong>{vtranslate("LBL_MORE",$MODULE_NAME)}</strong> &nbsp; <b class="fa fa-caret-down"></b>
                                                                     </span>
