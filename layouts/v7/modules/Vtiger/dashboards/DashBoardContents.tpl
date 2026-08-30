@@ -30,7 +30,7 @@
                         </a>
                     </li>
                 {/foreach}
-                <div class="moreSettings pull-right">
+                <div class="moreSettings float-end">
                     <div class="dropdown dashBoardDropDown">
                         <button class="btn btn-default reArrangeTabs dropdown-toggle" type="button" data-toggle="dropdown">{vtranslate('LBL_MORE',$MODULE)}
                             &nbsp;&nbsp;<span class="caret"></span></button>
@@ -39,7 +39,7 @@
                             <li><a class = "reArrangeTabs" href="#">{vtranslate('LBL_REARRANGE_DASHBOARD_TABS',$MODULE)}</a></li>
                         </ul>
                     </div>
-                    <button class="btn-success updateSequence pull-right hide">{vtranslate('LBL_SAVE_ORDER',$MODULE)}</button>
+                    <button class="btn-success updateSequence float-end hide">{vtranslate('LBL_SAVE_ORDER',$MODULE)}</button>
                 </div>
             </ul>
             <div class="tab-content">

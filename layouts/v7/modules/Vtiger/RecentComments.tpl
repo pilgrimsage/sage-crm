@@ -25,7 +25,7 @@
 					</div>
 				</div>
 				<div class='row'>
-					<div class="col-xs-6 pull-right paddingTop10 paddingLeft0">
+					<div class="col-xs-6 float-end paddingTop10 paddingLeft0">
 						<div style="text-align: right;">
 							{if in_array($MODULE_NAME, $PRIVATE_COMMENT_MODULES)}
 								<div class="" style="margin: 7px 0;">
@@ -39,7 +39,7 @@
 						</div>
 					</div>
 					{if $FIELD_MODEL->getProfileReadWritePermission()}
-						<div class="col-xs-6 paddingTop10 pull-left">
+						<div class="col-xs-6 paddingTop10 float-start">
 								{include file=vtemplate_path($FIELD_MODEL->getUITypeModel()->getTemplateName(),$MODULE_NAME) MODULE="ModComments"}
 						</div>
 					{/if}
@@ -54,12 +54,12 @@
 			{vtranslate('LBL_RECENT_COMMENTS', $MODULE_NAME)}
 		</h4>
 		{if $MODULE_NAME ne 'Leads'}
-			<div class="col-lg-5 commentHeader pull-right" style="margin-top:5px;text-align:right;padding-right:20px;">
+			<div class="col-lg-5 commentHeader float-end" style="margin-top:5px;text-align:right;padding-right:20px;">
 				<div class="display-inline-block">
 					<span class="">{vtranslate('LBL_ROLL_UP',$QUALIFIED_MODULE)} &nbsp;</span>
 					<span class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="{vtranslate('LBL_ROLLUP_COMMENTS_INFO',$QUALIFIED_MODULE)}"></span>&nbsp;&nbsp;
 				</div>
-				<input type="checkbox" class="bootstrap-switch pull-right" id="rollupcomments" hascomments="1" startindex="{$STARTINDEX}" data-view="summary" rollupid="{$ROLLUPID}" 
+				<input type="checkbox" class="bootstrap-switch float-end" id="rollupcomments" hascomments="1" startindex="{$STARTINDEX}" data-view="summary" rollupid="{$ROLLUPID}" 
 					rollup-status="{$ROLLUP_STATUS}" module="{$MODULE_NAME}" record="{$PARENT_RECORD}" checked data-on-color="success"/> 
 			</div> 
 		{/if}
@@ -127,7 +127,7 @@
 														<span class="commentInfoContent" data-maxlength="{$MAX_LENGTH}" style="display: block" data-fullComment="{$COMMENT_CONTENT|escape:"html"}" data-shortComment="{$DISPLAYNAME|mb_substr:0:200|escape:"html"}..." data-more='{vtranslate('LBL_SHOW_MORE',$MODULE)}' data-less='{vtranslate('LBL_SHOW',$MODULE)} {vtranslate('LBL_LESS',$MODULE)}'>
 															{if $DISPLAYNAME|count_characters:true gt $MAX_LENGTH}
 																{mb_substr(trim($DISPLAYNAME),0,$MAX_LENGTH)}...
-																<a class="pull-right toggleComment showMore" style="color: blue;"><small>{vtranslate('LBL_SHOW_MORE',$MODULE)}</small></a>
+																<a class="float-end toggleComment showMore" style="color: blue;"><small>{vtranslate('LBL_SHOW_MORE',$MODULE)}</small></a>
 															{else}
 																{$COMMENT_CONTENT}
 															{/if}
@@ -183,7 +183,7 @@
 															</span>
 														{/if}
 														<span {if $REASON_TO_EDIT}class="col-lg-7 col-md-7 col-sm-7"{/if}>
-															<p class="text-muted pull-right" {if !$REASON_TO_EDIT}style="margin-right: 15px;"{/if}>
+															<p class="text-muted float-end" {if !$REASON_TO_EDIT}style="margin-right: 15px;"{/if}>
 																<small>{vtranslate('LBL_COMMENT',$MODULE_NAME)} {strtolower(vtranslate('LBL_MODIFIED',$MODULE_NAME))}</small>&nbsp;
 																<small title="{Vtiger_Util_Helper::formatDateTimeIntoDayString($COMMENT->getModifiedTime())}" class="commentModifiedTime">{Vtiger_Util_Helper::formatDateDiffInStrings($COMMENT->getModifiedTime())}</small>
 															</p>
@@ -219,7 +219,7 @@
 		<div class="commentTextArea row">
 			<textarea name="commentcontent" class="commentcontent col-lg-12" placeholder="{vtranslate('LBL_ADD_YOUR_COMMENT_HERE', $MODULE_NAME)}" rows="{$COMMENT_TEXTAREA_DEFAULT_ROWS}"></textarea>
 		</div>
-		<div class="pull-right row">
+		<div class="float-end row">
 			{if in_array($MODULE_NAME, $PRIVATE_COMMENT_MODULES)}
 				<div class="checkbox">
 					<label>
@@ -243,7 +243,7 @@
 		</div>
 		<input type="hidden" name="is_private">
 		<div class="row" style="padding-bottom: 10px;">
-			<div class="pull-right">
+			<div class="float-end">
 				<button class="btn btn-success btn-sm detailViewSaveComment" type="button" data-mode="edit">{vtranslate('LBL_POST', $MODULE_NAME)}</button>
 				<a href="javascript:void(0);" class="cursorPointer closeCommentBlock cancelLink" type="reset">{vtranslate('LBL_CANCEL', $MODULE_NAME)}</a>
 			</div>

@@ -10,8 +10,8 @@
     <div class="module-filters" id="module-filters">
         <div class="sidebar-container lists-menu-container">
             <div class="sidebar-header clearfix">
-                <h5 class="pull-left">{vtranslate('LBL_LISTS',$MODULE)}</h5>
-                <button id="createFilter" data-url="{CustomView_Record_Model::getCreateViewUrl($MODULE)}" class="btn btn-sm btn-default pull-right sidebar-btn" title="{vtranslate('LBL_CREATE_LIST',$MODULE)}">
+                <h5 class="float-start">{vtranslate('LBL_LISTS',$MODULE)}</h5>
+                <button id="createFilter" data-url="{CustomView_Record_Model::getCreateViewUrl($MODULE)}" class="btn btn-sm btn-default float-end sidebar-btn" title="{vtranslate('LBL_CREATE_LIST',$MODULE)}">
                     <div class="fa fa-plus" aria-hidden="true"></div>
                 </button> 
             </div>
@@ -60,7 +60,7 @@
                                         {assign var=VIEWNAME value={vtranslate($CUSTOM_VIEW->get('viewname'), $MODULE)}}
 										{append var="CUSTOM_VIEW_NAMES" value=$VIEWNAME}
                                          <a class="filterName listViewFilterElipsis" href="{$LISTVIEW_URL|cat:'&viewname='|cat:$CUSTOM_VIEW->getId()|cat:'&app='|cat:$SELECTED_MENU_CATEGORY}" oncontextmenu="return false;" data-filter-id="{$CUSTOM_VIEW->getId()}" title="{$VIEWNAME|@escape:'html'}">{$VIEWNAME|@escape:'html'}</a> 
-                                            <div class="pull-right">
+                                            <div class="float-end">
                                                 <span class="js-popover-container" style="cursor:pointer;">
                                                     <span  class="fa fa-angle-down" rel="popover" data-bs-toggle="popover" aria-expanded="true" 
                                                         {if ($CUSTOM_VIEW->isMine() || $IS_ADMIN) && $CUSTOM_VIEW->get('viewname') neq 'All'}

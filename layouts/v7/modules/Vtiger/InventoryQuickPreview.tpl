@@ -54,7 +54,7 @@
                                     {/foreach}
                                 </select>
                             </div>
-                            <div class="col-lg-2 btn-group pull-right">
+                            <div class="col-lg-2 btn-group float-end">
                                 {if $DETAIL_ENABLED}
                                     <button class="btn btn-success btn-sm" style ="margin-right:10px">{vtranslate('LBL_DETAILS',$MODULE)}</button>
                                 {/if}

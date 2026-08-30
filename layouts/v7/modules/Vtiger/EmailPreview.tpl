@@ -21,7 +21,7 @@
 							<div class="row email-info-row">
 								<span class="col-lg-12">
 									<span class="col-lg-4">
-										<span class="pull-right">{vtranslate('LBL_FROM',$MODULE)}</span>
+										<span class="float-end">{vtranslate('LBL_FROM',$MODULE)}</span>
 									</span>
 									<span class="col-lg-8">
 										<span class="row-fluid">{$FROM}</span>
@@ -31,7 +31,7 @@
 							<div class="row email-info-row">
 								<span class="col-lg-12">
 									<span class="col-lg-4">
-										<span class="pull-right">{vtranslate('LBL_TO',$MODULE)}</span>
+										<span class="float-end">{vtranslate('LBL_TO',$MODULE)}</span>
 									</span>
 									<span class="col-lg-8">
 										{if empty($TO)}
@@ -56,7 +56,7 @@
 							</div>
 						</div>
 						<div class="col-lg-6">
-							<div class="email-preview-toolbar pull-right">
+							<div class="email-preview-toolbar float-end">
 								{if $RECORD->getEmailFlag() neq 'SAVED'}
 									<button type="button" name="previewReply" class="btn btn-sm btn-default" data-mode="emailReply">
 										{vtranslate('LBL_REPLY',$MODULE)}
@@ -87,7 +87,7 @@
 								<div class="row email-info-row">
 									<span class="col-lg-12">
 										<span class="col-lg-3">
-											<span class="pull-right">{vtranslate('LBL_CC',$MODULE)}</span>
+											<span class="float-end">{vtranslate('LBL_CC',$MODULE)}</span>
 										</span>
 										<span class="col-lg-9">
 											<span class="row-fluid">
@@ -101,7 +101,7 @@
 								<div class="row hide email-info-row">
 									<span class="col-lg-12">
 										<span class="col-lg-3">
-											<span class="pull-right">{vtranslate('LBL_BCC',$MODULE)}</span>
+											<span class="float-end">{vtranslate('LBL_BCC',$MODULE)}</span>
 										</span>
 										<span class="col-lg-9">
 											<span class="row-fluid">
@@ -115,7 +115,7 @@
 							<div class="row email-info-row">
 								<span class="col-lg-12">
 									<span class="col-lg-3">
-										<span class="pull-right">{vtranslate('LBL_SUBJECT',$MODULE)}</span>
+										<span class="float-end">{vtranslate('LBL_SUBJECT',$MODULE)}</span>
 									</span>
 									<span class="col-lg-9">
 										{$RECORD->get('subject')}
@@ -126,7 +126,7 @@
 							<div class="row email-info-row">
 								<span class="col-lg-12">
 									<span class="col-lg-3">
-										<span class="pull-right">{vtranslate('LBL_ATTACHMENT',$MODULE)}</span>
+										<span class="float-end">{vtranslate('LBL_ATTACHMENT',$MODULE)}</span>
 									</span>
 									<span class="col-lg-9">
 										{if php7_count($RECORD->getAttachmentDetails()) le 0}
@@ -149,7 +149,7 @@
 					<textarea style="display:none;" id="iframeDescription">{decode_html($RECORD->get('description'))}</textarea>
 					<div class="row email-info-row">
 						<div class="col-lg-2" style="padding-right:10px;">
-							<div class="pull-right">{vtranslate('LBL_DESCRIPTION',$MODULE)}</div>
+							<div class="float-end">{vtranslate('LBL_DESCRIPTION',$MODULE)}</div>
 						</div>
 						<div class="col-lg-10">
 							<div class="email-body-preview">

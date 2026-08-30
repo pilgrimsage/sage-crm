@@ -63,7 +63,7 @@
 			<div class="{if isset($RECURRING_INFORMATION['eventrecurringtype']) &&  $RECURRING_INFORMATION['eventrecurringtype'] eq 'Monthly'}show{else}hide{/if}" id="repeatMonthUI" style="margin-top:10px;"RCa>
 				<div class="row">
 					<span class="col-lg-4">
-						<span class="pull-right">
+						<span class="float-end">
 							<input type="radio" id="repeatDate" data-field-id= '{$FIELD_MODEL->get('id')}' name="repeatMonth" checked value="date" {if isset($RECURRING_INFORMATION['repeatMonth']) &&$RECURRING_INFORMATION['repeatMonth'] eq 'date'} checked {/if}/>
 							<span class="alignMiddle" style="margin-left: 0.8em;">{vtranslate('LBL_ON', $MODULE)}</span>
 						</span>	
@@ -77,7 +77,7 @@
 
 				<div class="row" id="repeatMonthDayUI" style="margin-top: 10px;">
 					<span class="col-lg-4">
-						<span class="pull-right">
+						<span class="float-end">
 							<input type="radio" id="repeatDay" data-field-id= '{$FIELD_MODEL->get('id')}' name="repeatMonth" value="day" {if isset($RECURRING_INFORMATION['repeatMonth']) && $RECURRING_INFORMATION['repeatMonth'] eq 'day'} checked {/if}/>
 							<span class="alignMiddle" style="margin-left: 0.8em;">{vtranslate('LBL_ON', $MODULE)}</span>
 						</span>	

@@ -11,7 +11,7 @@
         <div class="col-lg-8">
             <h4 class="searchModuleHeader">{vtranslate($MODULE,$MODULE)}</h4>
         </div>
-        <div class="col-lg-4 pull-right">
+        <div class="col-lg-4 float-end">
                 {assign var=RECORD_COUNT value=$LISTVIEW_ENTRIES_COUNT}
                 {include file="Pagination.tpl"|vtemplate_path:$MODULE SHOWPAGEJUMP=true}
         </div>

@@ -16,7 +16,7 @@
     {assign var=CLASS_VIEW_BASIC_ACTION value='listViewBasicAction'}
 {/if}
 <div class = "{$CLASS_VIEW_ACTION}">
-    <div class="btn-group pull-right">
+    <div class="btn-group float-end">
         <button type="button" id="PreviousPageButton" class="btn btn-default" {if !$PAGING_MODEL->isPrevPageExists()} disabled {/if}><i class="fa fa-caret-left"></i></button>
         {if $SHOWPAGEJUMP}
             <button type="button" id="PageJump" data-toggle="dropdown" class="btn btn-default">
@@ -39,7 +39,7 @@
         {/if}
         <button type="button" id="NextPageButton" class="btn btn-default" {if !$PAGING_MODEL->isNextPageExists()}disabled{/if}><i class="fa fa-caret-right"></i></button>
     </div>
-    <span class="pageNumbers  pull-right" style="position:relative;top:7px;">
+    <span class="pageNumbers  float-end" style="position:relative;top:7px;">
         <span class="pageNumbersText">
             {if $RECORD_COUNT}{$PAGING_MODEL->getRecordStartRange()} {vtranslate('LBL_to', $MODULE)} {$PAGING_MODEL->getRecordEndRange()}{else}
             {/if}

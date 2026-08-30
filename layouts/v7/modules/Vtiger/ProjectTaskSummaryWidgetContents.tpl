@@ -39,7 +39,7 @@
 									<span class="col-lg-6">{$TASK_PROGRESS_HEADER} :</span>
 									{if $PERMISSIONS && $FIELD_MODEL->isEditable()}
 										<span class="col-lg-6">
-											<div class="dropdown pull-left">
+											<div class="dropdown float-start">
 												<a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fieldValue">{$RELATED_RECORD->getDisplayValue('projecttaskprogress')}</span>&nbsp;<b class="caret"></b></a>
 												<ul class="dropdown-menu widgetsList" data-recordid="{$RELATED_RECORD->getId()}" data-fieldname="projecttaskprogress" 
                                                     data-old-value="{$RELATED_RECORD->getDisplayValue('projecttaskprogress')}" data-mandatory="{$FIELD_MODEL->isMandatory()}">
@@ -64,9 +64,9 @@
 									<span class="col-lg-6">{$TASK_STATUS_HEADER} :</span>
 									{if $PERMISSIONS && $FIELD_MODEL->isEditable()}
 										<span class="col-lg-6 nav nav-pills">
-											<div class="dropdown pull-left">
+											<div class="dropdown float-start">
 												<a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fieldValue">{$RELATED_RECORD->getDisplayValue('projecttaskstatus')}</span>&nbsp;<b class="caret"></b></a>
-												<ul class="dropdown-menu widgetsList pull-right" data-recordid="{$RELATED_RECORD->getId()}" data-fieldname="projecttaskstatus" 
+												<ul class="dropdown-menu widgetsList float-end" data-recordid="{$RELATED_RECORD->getId()}" data-fieldname="projecttaskstatus" 
 													data-old-value="{$RELATED_RECORD->getDisplayValue('projecttaskstatus')}" data-mandatory="{$FIELD_MODEL->isMandatory()}" style="max-height: 200px; left: -64px;">
 													{assign var=PICKLIST_VALUES value=$FIELD_MODEL->getPicklistValues()}
 													<li class="editTaskDetails emptyOption" value=""><a>{vtranslate('LBL_SELECT_OPTION',$MODULE_NAME)}</a></li>
@@ -91,7 +91,7 @@
 	{assign var=NUMBER_OF_RECORDS value=php7_count($RELATED_RECORDS)}
 	{if $NUMBER_OF_RECORDS eq 5}
 		<div class="">
-			<div class="pull-right">
+			<div class="float-end">
 				<a class="moreRecentTasks cursorPointer">{vtranslate('LBL_MORE',$MODULE_NAME)}</a>
 			</div>
 		</div>

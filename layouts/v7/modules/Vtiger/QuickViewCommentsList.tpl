@@ -43,7 +43,7 @@
                                             </div>
                                             <br>
                                             <div class="commentActionsContainer">      
-                                                <span class="commentTime pull-right">
+                                                <span class="commentTime float-end">
                                                     <p class="muted"><small title="{Vtiger_Util_Helper::formatDateTimeIntoDayString($COMMENT->getCommentedTime())}">{Vtiger_Util_Helper::formatDateAndDateDiffInString($COMMENT->getCommentedTime())}</small></p>
                                                 </span>
                                             </div>

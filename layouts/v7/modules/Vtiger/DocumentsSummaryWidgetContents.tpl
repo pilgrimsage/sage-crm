@@ -25,7 +25,7 @@
 		<div class="recentActivitiesContainer row">
 			<ul class="" style="padding-left: 0px;list-style-type: none;">
 				<li>
-					<div class="" id="documentRelatedRecord pull-left">
+					<div class="" id="documentRelatedRecord float-start">
 						<span class="col-sm-5 textOverflowEllipsis">
 							<a href="{$RELATED_RECORD->getDetailViewUrl()}" id="{$MODULE}_{$RELATED_MODULE}_Related_Record_{$RELATED_RECORD->get('id')}" title="{$RELATED_RECORD->getDisplayValue('notes_title')}">
 								{$RELATED_RECORD->getDisplayValue('notes_title')}
@@ -60,7 +60,7 @@
     {assign var=NUMBER_OF_RECORDS value=php7_count($RELATED_RECORDS)}
     {if $NUMBER_OF_RECORDS eq 5}
             <div class="row">
-                    <div class="pull-right">
+                    <div class="float-end">
                             <a class="moreRecentDocuments cursorPointer">{vtranslate('LBL_MORE',$MODULE_NAME)}</a>
                     </div>
             </div>

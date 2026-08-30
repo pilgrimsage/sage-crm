@@ -39,7 +39,7 @@
 	{assign var=NUMBER_OF_RECORDS value=php7_count($RELATED_RECORDS)}
 	{if $NUMBER_OF_RECORDS eq 5}
 		<div class="row">
-			<div class="pull-right">
+			<div class="float-end">
 				<a class="moreRecentTickets cursorPointer">{vtranslate('LBL_MORE',$MODULE_NAME)}</a>
 			</div>
 		</div>

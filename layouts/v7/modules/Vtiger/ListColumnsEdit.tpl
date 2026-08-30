@@ -31,7 +31,7 @@
 													<img src="{vimage_path('drag.png')}" class="cursorPointerMove" border="0" title="{vtranslate('LBL_DRAG',$MODULE)}">
 												</span>
 												<span class="fieldLabel">{vtranslate($FIELD_MODEL->get('label'),$FIELD_MODULE_NAME)}</span>
-												<span class="pull-right removeField"><i class="fa fa-times" title="{vtranslate('LBL_REMOVE',$MODULE)}"></i></span>
+												<span class="float-end removeField"><i class="fa fa-times" title="{vtranslate('LBL_REMOVE',$MODULE)}"></i></span>
 											</li>   
 										{/if}
 									{/foreach}
@@ -41,7 +41,7 @@
 										<img src="{vimage_path('drag.png')}" class="cursorPointerMove" border="0" title="{vtranslate('LBL_DRAG',$MODULE)}">
 									</span>
 									<span class="fieldLabel"></span>
-									<span class="pull-right removeField"><i class="fa fa-times"></i></span>
+									<span class="float-end removeField"><i class="fa fa-times"></i></span>
 								</li>
 							</div>
 						</div>

@@ -21,8 +21,8 @@
 						<textarea name="commentcontent" class="commentcontent form-control"  placeholder="{vtranslate('LBL_POST_YOUR_COMMENT_HERE', $MODULE_NAME)}" rows="{$COMMENT_TEXTAREA_DEFAULT_ROWS}"></textarea>
 					</div>
 					<div class="row">
-						<div class="col-xs-4 pull-right">
-							<div class="pull-right">
+						<div class="col-xs-4 float-end">
+							<div class="float-end">
 								{if in_array($MODULE_NAME, $PRIVATE_COMMENT_MODULES)}
 									<input type="checkbox" id="is_private" checked>&nbsp;&nbsp;{vtranslate('LBL_INTERNAL_COMMENT')}&nbsp;
 									<i class="fa fa-question-circle cursorPointer" data-toggle="tooltip" data-placement="top" data-original-title="{vtranslate('LBL_INTERNAL_COMMENT_INFO')}"></i>&nbsp;&nbsp;
@@ -31,7 +31,7 @@
 							</div>
 						</div>
                                                 {if $FIELD_MODEL->getProfileReadWritePermission()}
-                                                    <div class="col-xs-8 pull-left">
+                                                    <div class="col-xs-8 float-start">
                                                             {include file=vtemplate_path($FIELD_MODEL->getUITypeModel()->getTemplateName(),$MODULE_NAME) MODULE="ModComments"}
                                                     </div>
                                                 {/if}
@@ -45,7 +45,7 @@
 					{vtranslate('LBL_COMMENTS',$MODULE)}
 				</h4>
 				{if $MODULE_NAME ne 'Leads'}
-					<div class="col-lg-5 commentHeader pull-right" style="margin-top:5px;text-align:right;padding-right:20px;">
+					<div class="col-lg-5 commentHeader float-end" style="margin-top:5px;text-align:right;padding-right:20px;">
 						<div class="display-inline-block">
 							<span class="">{vtranslate('LBL_ROLL_UP',$QUALIFIED_MODULE)} &nbsp;</span>
 							<span class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="{vtranslate('LBL_ROLLUP_COMMENTS_INFO',$QUALIFIED_MODULE)}"></span>&nbsp;&nbsp;
@@ -64,7 +64,7 @@
 				<div class="commentTextArea row">
 					<textarea name="commentcontent" class="commentcontent" placeholder="{vtranslate('LBL_POST_YOUR_COMMENT_HERE', $MODULE_NAME)}" rows="{$COMMENT_TEXTAREA_DEFAULT_ROWS}"></textarea>
 				</div>
-				<div class="pull-right row">
+				<div class="float-end row">
 					{if in_array($MODULE_NAME, $PRIVATE_COMMENT_MODULES)}
 						<input type="checkbox" id="is_private" checked>&nbsp;&nbsp;{vtranslate('LBL_INTERNAL_COMMENT')}&nbsp;&nbsp;
 					{/if}
@@ -83,7 +83,7 @@
 					</div>
 				</div>
 				<input type="hidden" name="is_private">
-				<div class="pull-right row">
+				<div class="float-end row">
 					<button class="btn btn-success btn-sm saveComment" type="button" data-mode="edit"><strong>{vtranslate('LBL_POST', $MODULE_NAME)}</strong></button>
 					<a href="javascript:void(0);" class="cursorPointer closeCommentBlock cancelLink" type="reset">{vtranslate('LBL_CANCEL', $MODULE_NAME)}</a>
 				</div>

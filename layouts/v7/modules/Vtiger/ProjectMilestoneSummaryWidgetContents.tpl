@@ -22,7 +22,7 @@
 			<strong>{$PROJECTMILESTONE_NAME_HEADER}</strong>
 		</span>
 		<span class="col-lg-4">
-			<span class="pull-right">
+			<span class="float-end">
 				<strong>{$PROJECTMILESTONE_DATE_HEADER}</strong>
 			</span>
 		</span>
@@ -36,7 +36,7 @@
 							<a href="{$RELATED_RECORD->getDetailViewUrl()}" id="{$MODULE}_{$RELATED_MODULE}_Related_Record_{$RELATED_RECORD->get('id')}" title="{$RELATED_RECORD->getDisplayValue('projectmilestonename')}">{$RELATED_RECORD->getDisplayValue('projectmilestonename')}</a>
 						</span>
 						<span class="col-lg-4 horizontalLeftSpacingForSummaryWidgetContents">
-							<span class="pull-right">{$RELATED_RECORD->getDisplayValue('projectmilestonedate')}</span>
+							<span class="float-end">{$RELATED_RECORD->getDisplayValue('projectmilestonedate')}</span>
 						</span>
 							
 					</div>
@@ -47,7 +47,7 @@
 	{assign var=NUMBER_OF_RECORDS value=php7_count($RELATED_RECORDS)}
 	{if $NUMBER_OF_RECORDS eq 5}
 		<div class="row">
-			<div class="pull-right">
+			<div class="float-end">
 				<a class="moreRecentMilestones cursorPointer">{vtranslate('LBL_MORE',$MODULE_NAME)}</a>
 			</div>
 		</div>

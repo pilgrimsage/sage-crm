@@ -41,7 +41,7 @@
 					{$RECORD->get($NAME)}&nbsp;
 				{/if}
 				{if $smarty.foreach.minilistWidgetModelRowHeaders.last}
-					<a href="{$RECORD->getDetailViewUrl()}" class="pull-right"><i title="{vtranslate('LBL_SHOW_COMPLETE_DETAILS',$MODULE_NAME)}" class="fa fa-list"></i></a>
+					<a href="{$RECORD->getDetailViewUrl()}" class="float-end"><i title="{vtranslate('LBL_SHOW_COMPLETE_DETAILS',$MODULE_NAME)}" class="fa fa-list"></i></a>
 				{/if}
 			</div>
 		{/foreach}

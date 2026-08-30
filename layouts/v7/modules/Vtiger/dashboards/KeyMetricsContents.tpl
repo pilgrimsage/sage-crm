@@ -10,7 +10,7 @@
 <div>
 	{foreach item=KEYMETRIC from=$KEYMETRICS}
 	<div style="padding-bottom:6px;">
-		<span class="pull-right">{$KEYMETRIC.count}</span>
+		<span class="float-end">{$KEYMETRIC.count}</span>
 		<a href="?module={$KEYMETRIC.module}&view=List&viewname={$KEYMETRIC.id}">{$KEYMETRIC.name}</a>
 	</div>	
 	{/foreach}

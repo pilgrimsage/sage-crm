@@ -15,7 +15,7 @@
         <div class="modal-header">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <h4 class="pull-left m-xy-0" data-result="{vtranslate('LBL_SEARCH_RESULTS', $MODULE)}" data-modify="{vtranslate('LBL_SAVE_MODIFY_FILTER', $MODULE)}">
+                    <h4 class="float-start m-xy-0" data-result="{vtranslate('LBL_SEARCH_RESULTS', $MODULE)}" data-modify="{vtranslate('LBL_SAVE_MODIFY_FILTER', $MODULE)}">
                         {vtranslate('LBL_ADVANCE_SEARCH', $MODULE)} {vtranslate('LBL_SEARCH', $MODULE)}
                     </h4>
                 </div>
@@ -33,7 +33,7 @@
                 <div id="advanceSearchContainer">
                         <div class="searchModuleComponent">
 {*                            <div class="col-lg-12 col-md-12">*}
-                                <div class="pull-left" style="margin-right:10px;font-size:18px;">{vtranslate('LBL_SEARCH_IN',$MODULE)}</div>
+                                <div class="float-start" style="margin-right:10px;font-size:18px;">{vtranslate('LBL_SEARCH_IN',$MODULE)}</div>
                                 <select class="select2 col-lg-3" id="searchModuleList" data-placeholder="{vtranslate('LBL_SELECT_MODULE')}">
                                     <option></option>
                                     {foreach key=MODULE_NAME item=fieldObject from=$SEARCHABLE_MODULES}
@@ -86,7 +86,7 @@
                                 </div>
                     <div>&nbsp;</div>
                 </div>
-                  <div class="col-lg-2 col-md-1 hidden-xs hidden-sm">&nbsp;</div>
+                  <div class="col-lg-2 col-md-1 d-none d-md-block">&nbsp;</div>
 </div></div>
 {/strip}
 

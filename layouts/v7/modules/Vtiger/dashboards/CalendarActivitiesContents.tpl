@@ -13,7 +13,7 @@
 <div class="dashboardWidgetData">
 	{foreach from=$ACTIVITIES key=INDEX item=ACTIVITY}
 	<div>
-		<div class='pull-left'>
+		<div class='float-start'>
 			{if $ACTIVITY->get('activitytype') == 'Task'}
                 <span><i class="entryIcon vicon-task"></i></span>
 			{else}
@@ -21,7 +21,7 @@
 			{/if}
 		</div>
 		<div>
-			<div class='pull-left'>
+			<div class='float-start'>
 				{assign var=PARENT_ID value=$ACTIVITY->get('parent_id')}
 				{assign var=CONTACT_ID value=$ACTIVITY->get('contact_id')}
 				<a href="{$ACTIVITY->getDetailViewUrl()}">{$ACTIVITY->get('subject')}</a>{if $PARENT_ID} {vtranslate('LBL_FOR')} {$ACTIVITY->getDisplayValue('parent_id')}{else if $CONTACT_ID} {vtranslate('LBL_FOR')} {$ACTIVITY->getDisplayValue('contact_id')}{/if}
@@ -31,7 +31,7 @@
 				
 				{assign var=DUE_DATE value=$ACTIVITY->get('due_date')}
 				{assign var=DUE_TIME value=$ACTIVITY->get('time_end')}
-			<p class='pull-right muted' style='margin-top:5px;padding-right:5px;'><small title="{Vtiger_Util_Helper::formatDateTimeIntoDayString("$START_DATE $START_TIME")} {vtranslate('LBL_TO')} {Vtiger_Util_Helper::formatDateTimeIntoDayString("$DUE_DATE $DUE_TIME")}">{Vtiger_Util_Helper::formatDateDiffInStrings("$START_DATE $START_TIME")}</small></p>
+			<p class='float-end muted' style='margin-top:5px;padding-right:5px;'><small title="{Vtiger_Util_Helper::formatDateTimeIntoDayString("$START_DATE $START_TIME")} {vtranslate('LBL_TO')} {Vtiger_Util_Helper::formatDateTimeIntoDayString("$DUE_DATE $DUE_TIME")}">{Vtiger_Util_Helper::formatDateDiffInStrings("$START_DATE $START_TIME")}</small></p>
 			<div class='clearfix'></div>
 		</div>
 		<div class='clearfix'></div>
@@ -49,7 +49,7 @@
 	{/foreach}
 
 {if $PAGING->get('nextPageExists') eq 'true'}
-	<div class='pull-right' style='margin-top:5px;padding-right:5px;'>
+	<div class='float-end' style='margin-top:5px;padding-right:5px;'>
         <a href="javascript:;" name="history_more" data-url="{$WIDGET->getUrl()}&page={$PAGING->getNextPage()}">{vtranslate('LBL_MORE')}...</a>
 	</div>
 {/if}

@@ -16,7 +16,7 @@
 					<input type="hidden" name="search_module" value="{$MODULE}"/>
 				</div>
 				<div class="col-lg-4" style="margin-top: 10px;">
-					<div class="pull-right" >
+					<div class="float-end" >
 						<input type="hidden" name="pageNumber" value="{$PAGE_NUMBER}">
 						<input type="hidden" name="recordsCount" value="{$RECORDS_COUNT}">
 						<span class="pageNumbersText" style="padding-right:5px">

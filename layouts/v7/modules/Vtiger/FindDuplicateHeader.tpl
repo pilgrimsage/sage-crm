@@ -26,7 +26,7 @@
 		<div class="col-lg-1">
 			{if $LISTVIEW_ENTRIES_COUNT > 0}
 				{foreach item=LISTVIEW_BASICACTION from=$LISTVIEW_LINKS}
-					<button id="{$MODULE}_listView_basicAction_{Vtiger_Util_Helper::replaceSpaceWithUnderScores($LISTVIEW_BASICACTION->getLabel())}" class="btn btn-danger pull-left" 
+					<button id="{$MODULE}_listView_basicAction_{Vtiger_Util_Helper::replaceSpaceWithUnderScores($LISTVIEW_BASICACTION->getLabel())}" class="btn btn-danger float-start" 
 						{if stripos($LISTVIEW_BASICACTION->getUrl(), 'javascript:')===0} onclick='{$LISTVIEW_BASICACTION->getUrl()|substr:strlen("javascript:")};'{else} onclick='window.location.href="{$LISTVIEW_BASICACTION->getUrl()}"'{/if}>
 							<strong>{vtranslate($LISTVIEW_BASICACTION->getLabel(), $MODULE)}</strong>
 					</button>

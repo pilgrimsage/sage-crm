@@ -15,8 +15,8 @@
 					<i>{vtranslate('LBL_LAST_SAVED_ON', $MODULE)}</i> {Vtiger_Util_Helper::formatDateTimeIntoDayString($WIDGET->getLastSavedDate())}
 				</span>
 				<span class="col-lg-2">
-					<span class="pull-right">
-						<button class="btn btn-default btn-sm pull-right dashboard_notebookWidget_edit">
+					<span class="float-end">
+						<button class="btn btn-default btn-sm float-end dashboard_notebookWidget_edit">
 							<strong>{vtranslate('LBL_EDIT', $MODULE)}</strong>
 						</button>
 					</span>
@@ -35,8 +35,8 @@
 					<i>{vtranslate('LBL_LAST_SAVED_ON', $MODULE)}</i> {Vtiger_Util_Helper::formatDateTimeIntoDayString($WIDGET->getLastSavedDate())}
 				</span>
 				<span class="col-lg-2">
-					<span class="pull-right">
-						<button class="btn btn-mini btn-success pull-right dashboard_notebookWidget_save">
+					<span class="float-end">
+						<button class="btn btn-mini btn-success float-end dashboard_notebookWidget_save">
 							<strong>{vtranslate('LBL_SAVE', $MODULE)}</strong>
 						</button>
 					</span>

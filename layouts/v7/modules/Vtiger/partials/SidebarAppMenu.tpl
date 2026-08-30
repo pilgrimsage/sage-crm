@@ -45,7 +45,7 @@
 							<div class="menu-items-wrapper app-menu-items-wrapper">
 								<span class="app-icon-list fa {$APP_IMAGE_MAP.$APP_NAME}"></span>
 								<span class="app-name textOverflowEllipsis"> {vtranslate("LBL_$APP_NAME")}</span>
-								<span class="fa fa-chevron-right pull-right"></span>
+								<span class="fa fa-chevron-right float-end"></span>
 							</div>
 						</div>
 						<ul class="dropdown-menu app-modules-dropdown" aria-labelledby="{$APP_NAME}_modules_dropdownMenu">
@@ -98,7 +98,7 @@
 							<span class="app-icon-list fa fa-cog"></span>
 							<span class="app-name textOverflowEllipsis"> {vtranslate('LBL_SETTINGS', 'Settings:Vtiger')}</span>
 							{if $USER_MODEL->isAdminUser()}
-								<span class="fa fa-chevron-right pull-right"></span>
+								<span class="fa fa-chevron-right float-end"></span>
 							{/if}
 						</div>
 					</div>

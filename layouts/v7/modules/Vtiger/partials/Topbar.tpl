@@ -11,7 +11,7 @@
 	{include file="modules/Vtiger/Header.tpl"}
 
 	{assign var=APP_IMAGE_MAP value=Vtiger_MenuStructure_Model::getAppIcons()}
-	<nav class="navbar navbar-inverse navbar-fixed-top app-fixed-navbar">
+	<nav class="navbar navbar-inverse fixed-top app-fixed-navbar">
 		<div class="container-fluid global-nav">
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 app-navigator-container">
@@ -43,14 +43,14 @@
 						<div class="search-link">
 							<span class="fa fa-search" aria-hidden="true"></span>
 							<input class="keyword-input" type="text" placeholder="{vtranslate('LBL_TYPE_SEARCH')}" value="{$GLOBAL_SEARCH_VALUE}">
-							<span id="adv-search" class="adv-search fa fa-chevron-circle-down pull-right cursorPointer" aria-hidden="true"></span>
+							<span id="adv-search" class="adv-search fa fa-chevron-circle-down float-end cursorPointer" aria-hidden="true"></span>
 						</div>
 					</div>
 				</div>
 				<div id="navbar" class="col-sm-6 col-xs-12 collapse navbar-collapse navbar-right global-actions">
 					<ul class="nav navbar-nav">
 						<li>
-							<div class="dropdown pull-left">
+							<div class="dropdown float-start">
 								<div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
 									<a href="#" id="menubar_quickCreate" class="qc-button fa fa-plus-circle" title="{vtranslate('LBL_QUICK_CREATE',$MODULE)}" aria-hidden="true"></a>
 								</div>
@@ -141,10 +141,10 @@
 						{/if}
 						<li class="dropdown">
 							<div>
-								<a href="#" class="userName dropdown-toggle pull-right" data-bs-toggle="dropdown" role="button">
+								<a href="#" class="userName dropdown-toggle float-end" data-bs-toggle="dropdown" role="button">
 									<span class="fa fa-user" aria-hidden="true" title="{$USER_MODEL->get('userlabel')}
 										  ({$USER_MODEL->get('user_name')})"></span>
-									<span class="link-text-xs-only hidden-lg hidden-md hidden-sm">{$USER_MODEL->getName()}</span>
+									<span class="link-text-xs-only d-lg-none d-md-none d-sm-none">{$USER_MODEL->getName()}</span>
 								</a>
 								<div class="dropdown-menu logout-content" role="menu">
 									<div class="row">
@@ -173,11 +173,11 @@
 									<div id="logout-footer" class="logout-footer clearfix">
 										<hr style="margin: 10px 0 !important">
 										<div class="">
-											<span class="pull-left">
+											<span class="float-start">
 												<span class="fa fa-cogs"></span>
 												<a id="menubar_item_right_LBL_MY_PREFERENCES" href="{$USER_MODEL->getPreferenceDetailViewUrl()}">{vtranslate('LBL_MY_PREFERENCES')}</a>
 											</span>
-											<span class="pull-right">
+											<span class="float-end">
 												<span class="fa fa-power-off"></span>
 												<a id="menubar_item_right_LBL_SIGN_OUT" href="index.php?module=Users&action=Logout">{vtranslate('LBL_SIGN_OUT')}</a>
 											</span>

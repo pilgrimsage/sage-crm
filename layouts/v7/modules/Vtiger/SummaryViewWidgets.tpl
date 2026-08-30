@@ -28,11 +28,11 @@
                     <div class="widgetContainer_{$smarty.foreach.count.index}" data-url="{$DETAIL_VIEW_WIDGET->getUrl()}" data-name="{$DETAIL_VIEW_WIDGET->getLabel()}">
                         <div class="widget_header clearfix">
                             <input type="hidden" name="relatedModule" value="{$DETAIL_VIEW_WIDGET->get('linkName')}" />
-                            <span class="toggleButton pull-left"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;</span>
-                            <h4 class="display-inline-block pull-left">{vtranslate($DETAIL_VIEW_WIDGET->getLabel(),$MODULE_NAME)}</h4>
+                            <span class="toggleButton float-start"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;</span>
+                            <h4 class="display-inline-block float-start">{vtranslate($DETAIL_VIEW_WIDGET->getLabel(),$MODULE_NAME)}</h4>
 
                             {if $DETAIL_VIEW_WIDGET->get('action')}
-                                <div class="pull-right">
+                                <div class="float-end">
                                     <button class="btn addButton btn-default btn-sm createRecord" type="button" data-url="{$DETAIL_VIEW_WIDGET->get('actionURL')}">
                                         <i class="fa fa-plus"></i>&nbsp;&nbsp; {vtranslate('LBL_ADD',$MODULE_NAME)|cat:" "|cat:$DETAIL_VIEW_WIDGET->getLabel()}
                                     </button>
@@ -62,11 +62,11 @@
                     <div class="widgetContainer_{$smarty.foreach.count.index}" data-url="{$DETAIL_VIEW_WIDGET->getUrl()}" data-name="{$DETAIL_VIEW_WIDGET->getLabel()}">
                         <div class="widget_header clearfix">
                             <input type="hidden" name="relatedModule" value="{$DETAIL_VIEW_WIDGET->get('linkName')}" />
-                            <span class="toggleButton pull-left"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;</span>
-                            <h4 class="display-inline-block pull-left">{vtranslate($DETAIL_VIEW_WIDGET->getLabel(),$MODULE_NAME)}</h4>
+                            <span class="toggleButton float-start"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;</span>
+                            <h4 class="display-inline-block float-start">{vtranslate($DETAIL_VIEW_WIDGET->getLabel(),$MODULE_NAME)}</h4>
 
                             {if $DETAIL_VIEW_WIDGET->get('action')}
-                                <div class="pull-right">
+                                <div class="float-end">
                                     <button class="btn addButton btn-default btn-sm createRecord" type="button" data-url="{$DETAIL_VIEW_WIDGET->get('actionURL')}">
                                         <i class="fa fa-plus"></i>&nbsp;&nbsp;{vtranslate('LBL_ADD',$MODULE_NAME)|cat:" "|cat:$DETAIL_VIEW_WIDGET->getLabel()}
                                     </button>

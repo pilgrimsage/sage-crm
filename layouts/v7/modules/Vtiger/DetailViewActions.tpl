@@ -11,7 +11,7 @@
 -->*}
 {strip}
     <div class="col-lg-6 detailViewButtoncontainer">
-        <div class="pull-right btn-toolbar">
+        <div class="float-end btn-toolbar">
             <div class="btn-group">
             {assign var=STARRED value=$RECORD->get('starred')}
             {if $MODULE_MODEL->isStarredEnabled()}
@@ -64,7 +64,7 @@
             {/if}
             </div>
             {if !{$NO_PAGINATION}}
-            <div class="btn-group pull-right">
+            <div class="btn-group float-end">
                 <button class="btn btn-default " id="detailViewPreviousRecordButton" {if empty($PREVIOUS_RECORD_URL)} disabled="disabled" {else} onclick="window.location.href = '{$PREVIOUS_RECORD_URL}&app={$SELECTED_MENU_CATEGORY}'" {/if} >
                     <i class="fa fa-chevron-left"></i>
                 </button>

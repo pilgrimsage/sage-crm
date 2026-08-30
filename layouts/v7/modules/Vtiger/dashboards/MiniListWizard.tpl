@@ -20,7 +20,7 @@
 					<tbody>
 						<tr>
 							<td class="col-lg-1"></td>
-							<td class="fieldLabel col-lg-4"><label class="pull-right">{'LBL_SELECT_MODULE'|vtranslate}</label></td>
+							<td class="fieldLabel col-lg-4"><label class="float-end">{'LBL_SELECT_MODULE'|vtranslate}</label></td>
 							<td class="fieldValue col-lg-5">
 								<select name="module" style="width: 100%">
 									<option></option>
@@ -35,7 +35,7 @@
 						</tr>
 						<tr>
 							<td class="col-lg-1"></td>
-							<td class="fieldLabel col-lg-4"><label class="pull-right">{'LBL_FILTER'|vtranslate}</label></td>
+							<td class="fieldLabel col-lg-4"><label class="float-end">{'LBL_FILTER'|vtranslate}</label></td>
 							<td class="fieldValue col-lg-5">
 								<select name="filterid" style="width: 100%">
 									<option></option>
@@ -45,7 +45,7 @@
 						</tr>
 						<tr>
 							<td class="col-lg-1"></td>
-							<td class="fieldLabel col-lg-4"><label class="pull-right">{'LBL_EDIT_FIELDS'|vtranslate}</label></td>
+							<td class="fieldLabel col-lg-4"><label class="float-end">{'LBL_EDIT_FIELDS'|vtranslate}</label></td>
 							<td class="fieldValue col-lg-5">
 								<select name="fields" size="2" multiple="true" style="width: 100%">
 									<option></option>

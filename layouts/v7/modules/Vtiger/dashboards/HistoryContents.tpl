@@ -27,7 +27,7 @@
 				{/if}
 				{if $PROCEED}
 					<div class="row entry clearfix">
-						<div class='col-lg-1 pull-left'>
+						<div class='col-lg-1 float-start'>
 							{assign var=VT_ICON value=$MOD_NAME}
 							{if $MOD_NAME eq "Events"}
 								{assign var="TRANSLATED_MODULE_NAME" value="Calendar"}
@@ -37,7 +37,7 @@
 							{/if}
 							<span>{$HISTORY->getParent()->getModule()->getModuleIcon($VT_ICON)}</span>&nbsp;&nbsp;
 						</div>
-						<div class="col-lg-10 pull-left">
+						<div class="col-lg-10 float-start">
 							{assign var=DETAILVIEW_URL value=$PARENT->getDetailViewUrl()}
 							{if $HISTORY->isUpdate()}
 								{assign var=FIELDS value=$HISTORY->getFieldInstances()}
@@ -114,22 +114,22 @@
 							</div>
 						{/if}
 					</div>
-					{if $TIME}<p class="pull-right muted" style="padding-right:10px;"><small title="{Vtiger_Util_Helper::formatDateTimeIntoDayString("$TIME")}">{Vtiger_Util_Helper::formatDateDiffInStrings("$TIME")}</small></p>{/if}
+					{if $TIME}<p class="float-end muted" style="padding-right:10px;"><small title="{Vtiger_Util_Helper::formatDateTimeIntoDayString("$TIME")}">{Vtiger_Util_Helper::formatDateDiffInStrings("$TIME")}</small></p>{/if}
 				</div>
 			{/if}
 			{else if $MODELNAME == 'ModComments_Record_Model'}
 				<div class="row">
-					<div class="col-lg-1 pull-left">
+					<div class="col-lg-1 float-start">
 						<span><i class="vicon-chat entryIcon" title={$TRANSLATED_MODULE_NAME}></i></span>
 					</div>
-					<div class="col-lg-10 pull-left" style="margin-top:5px;">
+					<div class="col-lg-10 float-start" style="margin-top:5px;">
 						{assign var=COMMENT_TIME value=$HISTORY->getCommentedTime()}
 						<div>
 							<b>{$HISTORY->getCommentedByName()}</b> {vtranslate('LBL_COMMENTED')} {vtranslate('LBL_ON')} <a class="textOverflowEllipsis" href="{$HISTORY->getParentRecordModel()->getDetailViewUrl()}">{$HISTORY->getParentRecordModel()->getName()}</a>
 						</div>
 						<div><i>"{nl2br($HISTORY->get('commentcontent'))}"</i></div>
 					</div>
-					<p class="pull-right muted" style="padding-right:10px;"><small title="{Vtiger_Util_Helper::formatDateTimeIntoDayString("$COMMENT_TIME")}">{Vtiger_Util_Helper::formatDateDiffInStrings("$COMMENT_TIME")}</small></p>
+					<p class="float-end muted" style="padding-right:10px;"><small title="{Vtiger_Util_Helper::formatDateTimeIntoDayString("$COMMENT_TIME")}">{Vtiger_Util_Helper::formatDateDiffInStrings("$COMMENT_TIME")}</small></p>
 				</div>
 			{/if}
 		{/foreach}

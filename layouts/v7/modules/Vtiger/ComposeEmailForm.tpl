@@ -54,7 +54,7 @@
                                 <input id="emailField" style="width:100%" name="toEmail" type="text" class="autoComplete sourceField select2" data-rule-required="true" data-rule-multiEmails="true" value="{if !empty($TO_EMAILS)}{$TO_EMAILS|escape:html}{/if}" placeholder="{vtranslate('LBL_TYPE_AND_SEARCH',$MODULE)}">
                             </div>
                             <div class="col-lg-4 input-group">
-                                <select style="width: 140px;" class="select2 emailModulesList pull-right">
+                                <select style="width: 140px;" class="select2 emailModulesList float-end">
                                     {foreach item=MODULE_NAME from=$RELATED_MODULES}
                                         <option value="{$MODULE_NAME}" {if $MODULE_NAME eq $FIELD_MODULE} selected {/if}>{vtranslate($MODULE_NAME,$MODULE_NAME)}</option>
 							 {/foreach}
@@ -189,7 +189,7 @@
                 </div>
                 
                 <div class="modal-footer">
-                    <div class="pull-right cancelLinkContainer">
+                    <div class="float-end cancelLinkContainer">
                         <a href="#" class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                     </div>
                     <button id="sendEmail" name="sendemail" class="btn btn-success" title="{vtranslate("LBL_SEND_EMAIL",$MODULE)}" type="submit"><strong>{vtranslate("LBL_SEND_EMAIL",$MODULE)}</strong></button>

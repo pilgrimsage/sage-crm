@@ -62,7 +62,7 @@
                             {/foreach}  
                         {/if}	
                     </div> 
-                    <div class="pull-right " >
+                    <div class="float-end " >
                         <button type="button" class="close" aria-label="Close" data-dismiss="modal">
                             <span aria-hidden="true" class='fa fa-close'></span>
                         </button>

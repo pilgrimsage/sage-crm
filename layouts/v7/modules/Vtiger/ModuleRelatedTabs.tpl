@@ -97,7 +97,7 @@
                                                                             <strong>{vtranslate("LBL_MORE",$MODULE_NAME)}</strong> &nbsp; <b class="fa fa-caret-down"></b>
                                                                     </span>
                                                             </a>
-                                                            <ul class="dropdown-menu pull-right" id="relatedmenuList">
+                                                            <ul class="dropdown-menu float-end" id="relatedmenuList">
                                                                     {for $j = $COUNT1 to $COUNT-1}
                                                                             {assign var=RELATED_LINK value=$RELATEDTABS[$j]}
                                                                             {assign var=RELATEDMODULENAME value=$RELATED_LINK->getRelatedModuleName()}

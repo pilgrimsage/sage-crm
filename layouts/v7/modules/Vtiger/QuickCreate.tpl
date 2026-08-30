@@ -64,7 +64,7 @@
                                                     {if !empty($REFERENCED_MODULE_STRUCT)}
                                                         {assign var="REFERENCED_MODULE_NAME" value=$REFERENCED_MODULE_STRUCT->get('name')}
                                                     {/if}
-                                                    <span class="pull-right">
+                                                    <span class="float-end">
                                                         <select style="width:150px;" class="select2 referenceModulesList {if $FIELD_MODEL->isMandatory() eq true}reference-mandatory{/if}">
                                                             {foreach key=index item=value from=$referenceList}
                                                                 <option value="{$value}" {if isset($REFERENCED_MODULE_NAME) && $value eq $REFERENCED_MODULE_NAME} selected {/if} >{vtranslate($value, $value)}</option>

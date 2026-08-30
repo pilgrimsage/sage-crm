@@ -12,7 +12,7 @@
 	<script type="text/javascript" src="{vresource_url('layouts/v7/modules/Vtiger/resources/SearchList.js')}"></script>
 	<div id="searchResults-container" class="modal-body" style="padding:0!important">
 		<div class="col-lg-12 clearfix">
-			<div class="pull-right overlay-close">
+			<div class="float-end overlay-close">
 				<button type="button" class="close" aria-label="Close" data-target="#overlayPage" data-dismiss="modal">
 					<span aria-hidden="true" class="fa fa-close"></span>
 				</button>

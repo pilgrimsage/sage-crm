@@ -54,7 +54,7 @@
                                     {/foreach}
                                 </select>
                             </div>
-                            <div class="col-lg-2 btn-group pull-right col-lg-push-1">
+                            <div class="col-lg-2 btn-group float-end col-lg-push-1">
                                 {if $DETAIL_ENABLED}
                                     <button class="btn btn-success btn-sm" style ="margin-right:10px">{vtranslate('LBL_DETAILS',$MODULE)}</button>
                                 {/if}
@@ -76,7 +76,7 @@
                 </div>
                 <div class="modal-footer {if $DETAIL_PREVIEW eq 'false'}overlayFooter{/if}">
                     {if $DETAIL_PREVIEW eq 'false'}
-                        <footer class='pull-left'>
+                        <footer class='float-start'>
                         {/if}
                         {if $INCLUDE_BROWSER_SUPPORT_MSG}
                             <p class="redColor">{vtranslate('LBL_NOTE_ABOUT_PRINT',$MODULE)}</p>

@@ -13,14 +13,14 @@
 	{assign var=MODULE_NAME value="Calendar"}
 	<div class="summaryWidgetContainer">
 		<div class="widget_header clearfix">
-			<h4 class="display-inline-block pull-left">{vtranslate('LBL_ACTIVITIES',$MODULE_NAME)}</h4>
+			<h4 class="display-inline-block float-start">{vtranslate('LBL_ACTIVITIES',$MODULE_NAME)}</h4>
 			{*<div class="">
 			<button class="btn addButton createActivity" type="button" data-url="sourceModule={$RECORD->getModuleName()}&sourceRecord={$RECORD->getId()}&relationOperation=true">
 			<strong>{vtranslate('LBL_ADD',$MODULE_NAME)}</strong>
 			</button>
 			</div>*}
 			{assign var=CALENDAR_MODEL value = Vtiger_Module_Model::getInstance('Calendar')}
-			<div class="pull-right" style="margin-top: -5px;">
+			<div class="float-end" style="margin-top: -5px;">
 				{if $CALENDAR_MODEL->isPermitted('CreateView')}
 					<button class="btn addButton btn-sm btn-default createActivity toDotask textOverflowEllipsis max-width-100" title="{vtranslate('LBL_ADD_TASK',$MODULE_NAME)}" type="button" href="javascript:void(0)" data-url="sourceModule={$RECORD->getModuleName()}&sourceRecord={$RECORD->getId()}&relationOperation=true" >
 						<i class="fa fa-plus"></i>&nbsp;&nbsp;{vtranslate('LBL_ADD_TASK',$MODULE_NAME)}
@@ -63,7 +63,7 @@
 										{assign var=MODULE_NAME value=$RECORD->getModuleName()}
 										<input type="hidden" class="activityModule" value="{$RECORD->getModuleName()}"/>
 										<input type="hidden" class="activityType" value="{$RECORD->get('activitytype')}"/>
-										<div class="pull-right">
+										<div class="float-end">
 											 {assign var=FIELD_MODEL value=$RECORD->getModule()->getField('taskstatus')}
 											<style>
 												{assign var=PICKLIST_COLOR_MAP value=Settings_Picklist_Module_Model::getPicklistColorMap('taskstatus', true)}
@@ -89,7 +89,7 @@
 										{assign var=MODULE_NAME value="Events"}
 										<input type="hidden" class="activityModule" value="Events"/>
 										<input type="hidden" class="activityType" value="{$RECORD->get('activitytype')}"/>
-										<div class="pull-right">
+										<div class="float-end">
 											{assign var=FIELD_MODEL value=$RECORD->getModule()->getField('eventstatus')}
 											<style>
 												{assign var=PICKLIST_COLOR_MAP value=Settings_Picklist_Module_Model::getPicklistColorMap('eventstatus', true)}

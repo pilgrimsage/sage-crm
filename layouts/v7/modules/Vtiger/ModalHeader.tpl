@@ -12,12 +12,12 @@
 {strip}
     <div class="modal-header">
         <div class="clearfix">
-            <div class="pull-right " >
+            <div class="float-end " >
                 <button type="button" class="close" aria-label="Close" data-dismiss="modal">
                     <span aria-hidden="true" class='fa fa-close'></span>
                 </button>
             </div>
-            <h4 class="pull-left">
+            <h4 class="float-start">
                 {$TITLE}
             </h4>
         </div>

@@ -16,7 +16,7 @@
                 <span style="font-size: 24px;"><strong> {vtranslate('LBL_SEARCH_RESULTS', $MODULE)} </strong></span>
             </div>
             <div class="col-lg-6">
-                <div class="pull-right">
+                <div class="float-end">
                     <a class="btn btn-default module-buttons" href="javascript:void(0);" id="showFilter">{vtranslate('LBL_SAVE_MODIFY_FILTER',$MODULE)}</a>
                 </div>
             </div>

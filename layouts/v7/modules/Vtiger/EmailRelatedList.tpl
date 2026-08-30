@@ -119,7 +119,7 @@
                                 <span class="label {if $EMAIL_FLAG eq 'SAVED'}label-info{else if $EMAIL_FLAG eq 'SENT'}label-success{else}label-warning{/if}">
                                     {vtranslate($EMAIL_FLAG)}
                                 </span>
-                                <div class="pull-right actions">
+                                <div class="float-end actions">
                                     <span class="actionImages">
                                             <a name="emailsDetailView" data-id='{$RELATED_RECORD->getId()}'><i title="{vtranslate('LBL_SHOW_COMPLETE_DETAILS', $MODULE)}" class="fa fa-bars"></i></a>&nbsp;&nbsp;
                                             {if $RELATED_RECORD->getEmailFlag() eq 'SAVED'}

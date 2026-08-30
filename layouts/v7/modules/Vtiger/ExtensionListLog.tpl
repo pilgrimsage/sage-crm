@@ -10,10 +10,10 @@
     <div class="row">
         {if !$MODAL}
             <div class="col-sm-6 col-xs-6">
-                <h3 class="module-title pull-left"> {vtranslate($MODULE,$MODULE)} - {vtranslate('LBL_SYNC_LOG', $MODULE)} </h3>
+                <h3 class="module-title float-start"> {vtranslate($MODULE,$MODULE)} - {vtranslate('LBL_SYNC_LOG', $MODULE)} </h3>
             </div>
             <div class="col-sm-6 col-xs-6">
-                <div class="pull-right">
+                <div class="float-end">
                     <span class="module-title">
                         <h3><a data-url="{$MODULE_MODEL->getExtensionSettingsUrl($SOURCE_MODULE)}" class="btn addButton btn-default settingsPage" type="button" id="Contacts_basicAction_LBL_Sync_Settings"><span aria-hidden="true" class="fa fa-cog"></span> {vtranslate('LBL_SYNC_SETTINGS', $MODULE)}</a></h3>
                     </span>
