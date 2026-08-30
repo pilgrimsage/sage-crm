@@ -36,7 +36,7 @@
                     <li>
                     {if $LISTVIEW_LINKS['LISTVIEWSETTING']|@count gt 0}
                         <div class="settingsIcon">
-                            <button type="button" class="btn btn-default module-buttons dropdown-toggle" data-toggle="dropdown">
+                            <button type="button" class="btn btn-default module-buttons dropdown-toggle" data-bs-toggle="dropdown">
                                 <span class="fa fa-wrench" aria-hidden="true" title="{vtranslate('LBL_SETTINGS', $MODULE)}"></span>&nbsp; <span class="caret"></span>
                             </button>
                             <ul class="listViewSetting dropdown-menu">

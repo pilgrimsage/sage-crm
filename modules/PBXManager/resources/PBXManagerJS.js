@@ -30,7 +30,7 @@ var Vtiger_PBXManager_Js = {
 			if(result) {
 				for(i=0; i< result.length; i++) {
 					var record = result[i];
-					if(jQuery('#pbxcall_'+record.pbxmanagerid+'').size()== 0 )
+					if(jQuery('#pbxcall_'+record.pbxmanagerid+'').length== 0 )
 						Vtiger_PBXManager_Js.showPBXIncomingCallPopup(record);
 					else
 						Vtiger_PBXManager_Js.updatePBXIncomingCallPopup(record);

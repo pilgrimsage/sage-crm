@@ -129,7 +129,7 @@ jQuery.Class('Settings_MailConverter_Index_Js', {
 				currentBlock.html(data);
 				currentBlock.find('.sequenceNumber').text(parseInt(previousValue)+1)
 			} else {
-				var lastBlockValue = jQuery('[data-blockid]').size();
+				var lastBlockValue = jQuery('[data-blockid]').length;
 				jQuery('#rulesList').append('<div class="row-fluid padding-bottom1per" data-blockid="block_'+ruleId+'">'+data+'</div>');
 				jQuery('[data-blockid="block_'+ruleId+'"]').find('.sequenceNumber').text(parseInt(lastBlockValue)+1);
 			}

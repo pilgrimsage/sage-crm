@@ -178,60 +178,31 @@ jQuery.Class("Vtiger_Helper_Js",{
 		return aDeferred.promise();
 	},
 
-    showConfirmationBox: function(data) {
+    showConfirmation: function(data) {
         var aDeferred = jQuery.Deferred();
-                var buttonsInfo, title;
-                if((typeof data.buttons == "object") && (Object.keys(data.buttons).length > 0)){
-                    buttonsInfo = data.buttons;
-                }else{
-                    buttonsInfo = {
-				cancel: {
-					label: 'No',
-					className : 'btn-default confirm-box-btn-pad pull-right'
-				},
-				confirm: {
-					label: 'Yes',
-					className : 'confirm-box-ok confirm-box-btn-pad btn-primary'
-				}
-                                }
-                }
-                if(typeof data.title != "undefined"){
-                    title = data.title;
-                }else{
-                    title = '';
-                }
-		bootbox.confirm({
-            title : title,
-			buttons: buttonsInfo,
-			message: typeof (data['message']) == "object" ? data.message : data['message'], /* error | string */
-            htmlSupportEnable: data.hasOwnProperty('htmlSupportEnable') ? data['htmlSupportEnable'] : true,
-			callback: function(result) {
-				if (result) {
-					aDeferred.resolve();
-				} else {
-					aDeferred.reject();
-				}
-			}
-		});
-		
+        var title = data.title || '';
+        var message = typeof (data['message']) == "object" ? data.message.message : data['message'];
+        Swal.fire({
+            title: title,
+            html: message,
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonText: 'Yes',
+            cancelButtonText: 'No'
+        }).then(function(result) {
+            if (result.isConfirmed) { aDeferred.resolve(); }
+            else { aDeferred.reject(); }
+        });
         return aDeferred.promise();
     },
     showAlertBox: function(data, cb) {
-        var message = typeof (data['message']) == "object" ? data.message : data['message']; /* error | string */
-        if (typeof cb == 'function') {
-            bootbox.alert(message, cb);
-        }
-        else {
-            var aDeferred = jQuery.Deferred();
-            bootbox.alert(message, function(result) {
-                if (result) {
-                    aDeferred.resolve();
-                } else {
-                    aDeferred.reject();
-                }
-            });
-            return aDeferred.promise();
-        }
+        var message = typeof (data['message']) == "object" ? data.message.message : data['message'];
+        var aDeferred = jQuery.Deferred();
+        Swal.fire({ html: message, icon: 'info' }).then(function(result) {
+            if (typeof cb == 'function') { cb(result.isConfirmed); }
+            if (result.isConfirmed) { aDeferred.resolve(); } else { aDeferred.reject(); }
+        });
+        return aDeferred.promise();
     },
     
     defaultScrollParams : function(){
@@ -579,7 +550,15 @@ jQuery.Class("Vtiger_Helper_Js",{
         
         if (typeof (options['message']) == "object") { options.message = options['message'].message; }
         
-        jQuery.notify(options,settings);
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'error', // 'success' for the success function
+            title: options.message,
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true
+        });
     },
     
     showSuccessNotification : function(options, settings) {
@@ -590,7 +569,15 @@ jQuery.Class("Vtiger_Helper_Js",{
         options = jQuery.extend(defaultOptions, options);
         
         if (typeof (options['message']) == "object") { options.message = options['message'].message; }
-        jQuery.notify(options,settings);
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'success',
+            title: options.message,
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true
+        });
     },
     
 	rand : function() {

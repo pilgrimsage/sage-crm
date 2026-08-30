@@ -43,7 +43,7 @@
                 </button>
             {/foreach}
             {if !empty($DETAILVIEW_LINKS['DETAILVIEW']) && ($DETAILVIEW_LINKS['DETAILVIEW']|@count gt 0)}
-                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
+                <button class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0);">
                    {vtranslate('LBL_MORE', $MODULE_NAME)}&nbsp;&nbsp;<i class="caret"></i>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-right">

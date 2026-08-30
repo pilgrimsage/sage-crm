@@ -561,7 +561,7 @@ Vtiger.Class('Settings_PickListDependency_Js', {
                 try{
                     thisInstance.updateValueMapping(dependencyGraph);
                 }catch(e) {
-                    bootbox.alert(e.message);
+                    Swal.fire(e.message)
                     return;
                 }
                 thisInstance.savePickListDependency(form);

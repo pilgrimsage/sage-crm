@@ -31,7 +31,7 @@
 		</span>
 	{/if}
     <span class="more dropdown action">
-        <span href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+        <span href="javascript:;" class="dropdown-toggle" data-bs-toggle="dropdown">
             <i class="fa fa-ellipsis-v icon"></i></span>
         <ul class="dropdown-menu">
             <li><a data-id="{$LISTVIEW_ENTRY->getId()}" href="{$LISTVIEW_ENTRY->getFullDetailViewUrl()}&app={$SELECTED_MENU_CATEGORY}">{vtranslate('LBL_DETAILS', $MODULE)}</a></li>

@@ -31,10 +31,10 @@
 					</div>
 				</div>
 				<div class="navbar-header paddingTop5">
-					<button type="button" class="navbar-toggle collapsed border0" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed border0" data-bs-toggle="collapse" data-target="#navbar" aria-expanded="false">
 						<i class="fa fa-th"></i>
 					</button>
-					<button type="button" class="navbar-toggle collapsed border0" data-toggle="collapse" data-target="#search-links-container" aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed border0" data-bs-toggle="collapse" data-target="#search-links-container" aria-expanded="false">
 						<i class="fa fa-search"></i>
 					</button>
 				</div>
@@ -51,7 +51,7 @@
 					<ul class="nav navbar-nav">
 						<li>
 							<div class="dropdown pull-left">
-								<div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+								<div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
 									<a href="#" id="menubar_quickCreate" class="qc-button fa fa-plus-circle" title="{vtranslate('LBL_QUICK_CREATE',$MODULE)}" aria-hidden="true"></a>
 								</div>
 								<style type="text/css">
@@ -87,7 +87,7 @@
 																</div>
 															{else if $singularLabel == 'SINGLE_Documents'}
 																<div class="quickCreateItem {if $hideDiv}create_restricted_{$moduleModel->getName()} hide{else}col-lg-4 col-xs-4{/if} dropdown">
-																	<a id="menubar_quickCreate_{$moduleModel->getName()}" class="quickCreateModuleSubmenu dropdown-toggle" data-name="{$moduleModel->getName()}" data-toggle="dropdown" 
+																	<a id="menubar_quickCreate_{$moduleModel->getName()}" class="quickCreateModuleSubmenu dropdown-toggle" data-name="{$moduleModel->getName()}" data-bs-toggle="dropdown" 
 																	   data-url="{$moduleModel->getQuickCreateUrl()}" href="javascript:void(0)">
 																		{$moduleModel->getModuleIcon()}
 																		<span class="quick-create-module">
@@ -141,7 +141,7 @@
 						{/if}
 						<li class="dropdown">
 							<div>
-								<a href="#" class="userName dropdown-toggle pull-right" data-toggle="dropdown" role="button">
+								<a href="#" class="userName dropdown-toggle pull-right" data-bs-toggle="dropdown" role="button">
 									<span class="fa fa-user" aria-hidden="true" title="{$USER_MODEL->get('userlabel')}
 										  ({$USER_MODEL->get('user_name')})"></span>
 									<span class="link-text-xs-only hidden-lg hidden-md hidden-sm">{$USER_MODEL->getName()}</span>

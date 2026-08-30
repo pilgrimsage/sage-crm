@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.5, created on 2026-08-29 18:57:52
+/* Smarty version 4.5.5, created on 2026-08-30 07:39:18
   from '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/partials/SidebarAppMenu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.5',
-  'unifunc' => 'content_6a932bb034b415_50556091',
+  'unifunc' => 'content_6a93de26236ab9_91789354',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f3dc3579a80cfc1ba6b904041329f8382fd1fd3d' => 
     array (
       0 => '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/partials/SidebarAppMenu.tpl',
-      1 => 1752039682,
+      1 => 1788074367,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6a932bb034b415_50556091 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6a93de26236ab9_91789354 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="app-menu hide" id="app-menu">
 	<div class="container-fluid">
@@ -73,7 +73,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 												<div class="menu-item app-item dropdown-toggle app-item-color-<?php echo $_smarty_tpl->tpl_vars['APP_NAME']->value;?>
 " data-app-name="<?php echo $_smarty_tpl->tpl_vars['APP_NAME']->value;?>
 " id="<?php echo $_smarty_tpl->tpl_vars['APP_NAME']->value;?>
-_modules_dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-default-url="#">
+_modules_dropdownMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-default-url="#">
 							<div class="menu-items-wrapper app-menu-items-wrapper">
 								<span class="app-icon-list fa <?php echo $_smarty_tpl->tpl_vars['APP_IMAGE_MAP']->value[$_smarty_tpl->tpl_vars['APP_NAME']->value];?>
 "></span>
@@ -147,7 +147,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 			<?php }?>
 			<?php if ($_smarty_tpl->tpl_vars['USER_MODEL']->value->isAdminUser()) {?>
 				<div class="dropdown app-modules-dropdown-container dropdown-compact">
-					<div class="menu-item app-item dropdown-toggle app-item-misc" data-app-name="TOOLS" id="TOOLS_modules_dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-default-url="#">
+					<div class="menu-item app-item dropdown-toggle app-item-misc" data-app-name="TOOLS" id="TOOLS_modules_dropdownMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-default-url="#">
 						<div class="menu-items-wrapper app-menu-items-wrapper">
 							<span class="app-icon-list fa fa-cog"></span>
 							<span class="app-name textOverflowEllipsis"> <?php echo vtranslate('LBL_SETTINGS','Settings:Vtiger');?>

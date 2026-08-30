@@ -1,0 +1,209 @@
+/* ==========================================================================
+   Modern skin — List View
+   Loads AFTER bootstrap5.min.css. Restyles existing vtiger classnames.
+   No markup/JS dependency changed — safe layer.
+   ========================================================================== */
+
+:root{
+	--ink:#10151C;
+	--teal:#0E7C66;
+	--teal-deep:#0A5C4B;
+	--teal-soft:#E8F7F1;
+	--paper:#FFFFFF;
+	--mist:#F4F6F5;
+	--mist-dark:#EDF0EF;
+	--muted:#6B7280;
+	--line:#E4E8E6;
+	--danger:#E4572E;
+	--radius:8px;
+}
+
+body{
+	font-family:'Inter',-apple-system,sans-serif;
+	background:var(--mist);
+	color:var(--ink);
+}
+
+/* ---- toolbar / mass actions ---- */
+.listview-actions-container{
+	background:var(--paper);
+	border:1px solid var(--line);
+	border-radius:var(--radius);
+	padding:10px 12px;
+	margin-bottom:10px;
+}
+.listview-actions-container .btn-default{
+	background:var(--paper);
+	border:1px solid var(--line);
+	color:var(--ink);
+	border-radius:6px;
+	font-size:13px;
+}
+.listview-actions-container .btn-default:hover{
+	background:var(--mist);
+	border-color:var(--teal);
+}
+.listview-actions-container .btn-group{
+	border-radius:6px;
+	overflow:hidden;
+}
+
+/* caret — BS5 dropped .caret, rebuild with CSS triangle */
+.caret{
+	display:inline-block;
+	width:0;
+	height:0;
+	margin-left:4px;
+	vertical-align:middle;
+	border-top:4px solid var(--muted);
+	border-right:4px solid transparent;
+	border-left:4px solid transparent;
+}
+
+/* ---- table shell ---- */
+.table-container{
+	background:var(--paper);
+	border:1px solid var(--line);
+	border-radius:var(--radius);
+	overflow:hidden;
+}
+.listview-table{
+	width:100%;
+	border-collapse:collapse;
+	font-size:13.5px;
+}
+.listview-table thead tr.listViewContentHeader{
+	background:var(--mist);
+	border-bottom:1px solid var(--line);
+}
+.listview-table thead th{
+	padding:11px 12px;
+	font-weight:600;
+	color:var(--muted);
+	text-transform:uppercase;
+	font-size:11px;
+	letter-spacing:.03em;
+	white-space:nowrap;
+}
+.listview-table thead th a.listViewContentHeaderValues{
+	color:var(--muted);
+	text-decoration:none;
+}
+.listview-table thead th a.listViewContentHeaderValues:hover{
+	color:var(--ink);
+}
+.listview-table tbody tr.listViewEntries{
+	border-bottom:1px solid var(--line);
+	transition:background .1s ease;
+}
+.listview-table tbody tr.listViewEntries:hover{
+	background:var(--mist);
+	cursor:pointer;
+}
+.listview-table td.listViewEntryValue{
+	padding:11px 12px;
+	color:var(--ink);
+}
+.listview-table td.listViewEntryValue a{
+	color:var(--teal);
+	text-decoration:none;
+	font-weight:500;
+}
+.listview-table td.listViewEntryValue a:hover{
+	text-decoration:underline;
+}
+.listViewRecordActions{
+	width:36px;
+	text-align:center;
+}
+
+/* row checkbox */
+.listViewEntriesMainCheckBox,
+.listview-table input[type="checkbox"]{
+	accent-color:var(--teal);
+	width:15px;
+	height:15px;
+}
+
+/* search row */
+.searchRow th{
+	background:var(--paper);
+	padding:8px;
+}
+.searchRow .btn-success{
+	background:var(--teal);
+	border-color:var(--teal);
+}
+.searchRow .btn-success:hover{
+	background:var(--teal-deep);
+	border-color:var(--teal-deep);
+}
+.searchRow .btn-danger{
+	background:var(--danger);
+	border-color:var(--danger);
+}
+
+/* picklist chips */
+.picklist-color{
+	display:inline-block;
+	padding:2px 9px;
+	border-radius:20px;
+	font-size:12px;
+	font-weight:500;
+	background:var(--teal-soft);
+	color:var(--teal-deep);
+}
+
+/* empty state */
+.emptyRecordsContent{
+	text-align:center;
+	padding:48px 20px;
+	color:var(--muted);
+	font-size:14px;
+}
+.emptyRecordsContent a{
+	color:var(--teal) !important;
+	font-weight:500;
+}
+
+/* left panel toggle */
+.essentials-toggle{
+	background:var(--paper);
+	border:1px solid var(--line);
+	border-radius:6px;
+	width:26px;
+	height:26px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:var(--muted);
+	margin-bottom:8px;
+	cursor:pointer;
+}
+.essentials-toggle:hover{
+	border-color:var(--teal);
+	color:var(--teal);
+}
+
+/* pagination / scroller */
+.bottom-fixed-scroll{
+	background:var(--paper);
+	border-top:1px solid var(--line);
+}
+
+/* dropdown menus app-wide (affects listview + others sharing .dropdown-menu) */
+.dropdown-menu{
+	border:1px solid var(--line);
+	border-radius:8px;
+	box-shadow:0 8px 24px rgba(16,21,28,.08);
+	padding:6px;
+}
+.dropdown-menu > li > a{
+	border-radius:5px;
+	padding:8px 10px;
+	font-size:13.5px;
+	color:var(--ink);
+}
+.dropdown-menu > li > a:hover{
+	background:var(--mist);
+}

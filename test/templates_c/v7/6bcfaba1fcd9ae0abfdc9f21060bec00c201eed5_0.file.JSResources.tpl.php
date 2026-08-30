@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.5, created on 2026-08-29 19:55:27
+/* Smarty version 4.5.5, created on 2026-08-30 07:39:18
   from '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/JSResources.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.5',
-  'unifunc' => 'content_6a932b1f5b22e2_17356339',
+  'unifunc' => 'content_6a93de2626f5e1_47031063',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6bcfaba1fcd9ae0abfdc9f21060bec00c201eed5' => 
     array (
       0 => '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/JSResources.tpl',
-      1 => 1752039682,
+      1 => 1788075253,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6a932b1f5b22e2_17356339 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6a93de2626f5e1_47031063 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/jquery/purl.js');?>
 "><?php echo '</script'; ?>
@@ -37,10 +37,7 @@ echo '<script'; ?>
  type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/todc/js/popper.min.js');?>
 "><?php echo '</script'; ?>
 ><?php echo '<script'; ?>
- type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/todc/js/bootstrap.min.js');?>
-"><?php echo '</script'; ?>
-><?php echo '<script'; ?>
- type="text/javascript" src="<?php echo vresource_url('libraries/jquery/jstorage.min.js');?>
+ type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/modern/plugins/bootstrap-5.3.8-dist/js/bootstrap.min.js');?>
 "><?php echo '</script'; ?>
 ><?php echo '<script'; ?>
  type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/jquery/jquery-validation/jquery.validate.min.js');?>
@@ -61,7 +58,7 @@ echo '<script'; ?>
  type="text/javascript" src="<?php echo vresource_url('resources/jquery.additions.js');?>
 "><?php echo '</script'; ?>
 ><?php echo '<script'; ?>
- type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/bootstrap-notify/bootstrap-notify.min.js');?>
+ src="<?php echo vresource_url('layouts/v7/lib/sweetalert2/sweetalert2.min.js');?>
 "><?php echo '</script'; ?>
 ><?php echo '<script'; ?>
  type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/jquery/websockets/reconnecting-websocket.js');?>
@@ -121,9 +118,6 @@ echo '<script'; ?>
  type='text/javascript' src="<?php echo vresource_url('layouts/v7/modules/Vtiger/resources/validation.js');?>
 "><?php echo '</script'; ?>
 ><?php echo '<script'; ?>
- type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/bootbox/bootbox.js');?>
-"><?php echo '</script'; ?>
-><?php echo '<script'; ?>
  type="text/javascript" src="<?php echo vresource_url('layouts/v7/modules/Vtiger/resources/Base.js');?>
 "><?php echo '</script'; ?>
 ><?php echo '<script'; ?>
@@ -167,9 +161,6 @@ echo '<script'; ?>
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 echo '<script'; ?>
  type="text/javascript" src="<?php echo vresource_url('layouts/v7/resources/v7_client_compat.js');?>
-"><?php echo '</script'; ?>
-><!-- Added in the end since it should be after less file loaded --><?php echo '<script'; ?>
- type="text/javascript" src="<?php echo vresource_url('libraries/bootstrap/js/less.min.js');?>
 "><?php echo '</script'; ?>
 ><!-- Enable tracking pageload time --><?php echo '<script'; ?>
  type="text/javascript">var _REQSTARTTIME = "<?php echo $_SERVER['REQUEST_TIME'];?>

@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Modern skin — Topbar + App Navigator (shared chrome, every screen)
+   Loads AFTER bootstrap5.min.css + listview.css + detailview.css.
+   ========================================================================== */
+
+/* ---- top navbar ---- */
+.app-fixed-navbar.navbar-inverse{
+	background:var(--ink) !important;
+	border:none;
+	box-shadow:0 1px 0 rgba(0,0,0,.08);
+	min-height:52px;
+}
+.app-fixed-navbar .app-switcher-container{
+	cursor:pointer;
+}
+.app-fixed-navbar .app-icon{
+	color:#fff;
+	opacity:.85;
+	font-size:16px;
+}
+.app-fixed-navbar .app-icon:hover{
+	opacity:1;
+}
+.app-fixed-navbar .company-logo img{
+	max-height:28px;
+}
+
+/* global search */
+.search-links-container .search-link{
+	background:rgba(255,255,255,.08);
+	border-radius:8px;
+	padding:6px 12px;
+	display:flex;
+	align-items:center;
+	gap:8px;
+}
+.search-links-container .keyword-input{
+	background:transparent;
+	border:none;
+	color:#fff;
+	font-size:13.5px;
+	flex:1;
+}
+.search-links-container .keyword-input::placeholder{
+	color:rgba(255,255,255,.5);
+}
+.search-links-container .fa-search{
+	color:rgba(255,255,255,.6);
+}
+
+/* right-side icons (calendar, reports, tasks) */
+.global-actions > .nav > li > div > a,
+.global-actions > .nav > li > a{
+	color:rgba(255,255,255,.75);
+	padding:14px 12px;
+	font-size:15px;
+}
+.global-actions > .nav > li > div > a:hover,
+.global-actions > .nav > li > a:hover{
+	color:#7CF2C0;
+}
+.qc-button{
+	color:#7CF2C0 !important;
+	font-size:20px !important;
+}
+
+/* user menu */
+.userName{
+	color:#fff !important;
+	display:flex;
+	align-items:center;
+	gap:6px;
+}
+.logout-content{
+	border:1px solid var(--line);
+	border-radius:10px;
+	box-shadow:0 10px 30px rgba(16,21,28,.12);
+	padding:16px;
+	width:280px;
+}
+.logout-content h4{
+	font-family:'Space Grotesk',sans-serif;
+	font-size:15px;
+	margin:0;
+}
+.logout-content h5{
+	color:var(--muted);
+	font-weight:400;
+	font-size:12.5px;
+}
+.logout-content .profile-container p{
+	color:var(--muted);
+	font-size:12.5px;
+	margin:2px 0 0;
+}
+.logout-footer a{
+	color:var(--ink);
+	font-size:13px;
+	margin-left:6px;
+}
+.logout-footer a:hover{
+	color:var(--teal);
+}
+
+/* quick create dropdown */
+.quickCreateItem a.quickCreateModule,
+.quickCreateItem a.quickCreateModuleSubmenu{
+	color:var(--ink);
+	font-size:13px;
+	text-decoration:none;
+	display:flex;
+	align-items:center;
+	gap:8px;
+	padding:8px;
+	border-radius:6px;
+}
+.quickCreateItem a:hover{
+	background:var(--mist);
+}
+
+/* ---- app switcher panel (slide-out) ---- */
+.app-menu{
+	background:var(--ink);
+}
+.app-menu .app-item{
+	color:rgba(255,255,255,.85);
+	border-radius:8px;
+	padding:10px 12px;
+}
+.app-menu .app-item:hover{
+	background:rgba(255,255,255,.08);
+}
+.app-menu .app-name{
+	font-size:13.5px;
+	font-weight:500;
+}
+.app-menu .app-icon-list{
+	margin-right:8px;
+	color:#7CF2C0;
+}
+
+/* app modules dropdown (flyout submenu per app) */
+.app-modules-dropdown-container .dropdown-menu{
+	border-radius:10px;
+	min-width:220px;
+}

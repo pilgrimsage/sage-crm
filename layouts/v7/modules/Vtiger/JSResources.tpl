@@ -15,15 +15,16 @@
     <script type="text/javascript" src="{vresource_url('layouts/v7/lib/jquery/jquery.class.min.js')}"></script>
     <script type="text/javascript" src="{vresource_url('layouts/v7/lib/jquery/jquery-ui-1.12.0.custom/jquery-ui.js')}"></script>
     <script type="text/javascript" src="{vresource_url('layouts/v7/lib/todc/js/popper.min.js')}"></script>
-    <script type="text/javascript" src="{vresource_url('layouts/v7/lib/todc/js/bootstrap.min.js')}"></script>
-    <script type="text/javascript" src="{vresource_url('libraries/jquery/jstorage.min.js')}"></script>
+    <script type="text/javascript" src="{vresource_url('layouts/v7/lib/modern/plugins/bootstrap-5.3.8-dist/js/bootstrap.min.js')}"></script>
     <script type="text/javascript" src="{vresource_url('layouts/v7/lib/jquery/jquery-validation/jquery.validate.min.js')}"></script>
     <script type="text/javascript" src="{vresource_url('layouts/v7/lib/jquery/jquery.slimscroll.min.js')}"></script>
     <script type="text/javascript" src="{vresource_url('libraries/jquery/jquery.ba-outside-events.min.js')}"></script>
 	<script type="text/javascript" src="{vresource_url('libraries/jquery/defunkt-jquery-pjax/jquery.pjax.js')}"></script>
     <script type="text/javascript" src="{vresource_url('libraries/jquery/multiplefileupload/jquery_MultiFile.js')}"></script>
     <script type="text/javascript" src="{vresource_url('resources/jquery.additions.js')}"></script>
-    <script type="text/javascript" src="{vresource_url('layouts/v7/lib/bootstrap-notify/bootstrap-notify.min.js')}"></script>
+
+    <script src="{vresource_url('layouts/v7/lib/sweetalert2/sweetalert2.min.js')}"></script>
+    
     <script type="text/javascript" src="{vresource_url('layouts/v7/lib/jquery/websockets/reconnecting-websocket.js')}"></script>
     <script type="text/javascript" src="{vresource_url('layouts/v7/lib/jquery/jquery-play-sound/jquery.playSound.js')}"></script>
     <script type="text/javascript" src="{vresource_url('layouts/v7/lib/jquery/malihu-custom-scrollbar/jquery.mousewheel.min.js')}"></script>
@@ -43,7 +44,7 @@
     <script type="text/javascript" src="{vresource_url('layouts/v7/resources/application.js')}"></script>
     <script type="text/javascript" src="{vresource_url('layouts/v7/modules/Vtiger/resources/Utils.js')}"></script>
     <script type='text/javascript' src="{vresource_url('layouts/v7/modules/Vtiger/resources/validation.js')}"></script>
-    <script type="text/javascript" src="{vresource_url('layouts/v7/lib/bootbox/bootbox.js')}"></script>
+    
     <script type="text/javascript" src="{vresource_url('layouts/v7/modules/Vtiger/resources/Base.js')}"></script>
     <script type="text/javascript" src="{vresource_url('layouts/v7/modules/Vtiger/resources/Vtiger.js')}"></script>
     <script type="text/javascript" src="{vresource_url('layouts/v7/modules/Calendar/resources/TaskManagement.js')}"></script>
@@ -60,8 +61,7 @@
     {/foreach}
 
     <script type="text/javascript" src="{vresource_url('layouts/v7/resources/v7_client_compat.js')}"></script>
-    <!-- Added in the end since it should be after less file loaded -->
-    <script type="text/javascript" src="{vresource_url('libraries/bootstrap/js/less.min.js')}"></script>
+   
 
     <!-- Enable tracking pageload time -->
 	<script type="text/javascript">

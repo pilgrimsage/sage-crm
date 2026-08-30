@@ -291,7 +291,11 @@ Vtiger.Class('Vtiger_Index_Js', {
 			'delay' : 0
 		};
 
-		jQuery.notify(notifyParams, settings);
+		Swal.fire({
+			title: notifyParams.title,
+			html: notifyParams.message,
+			icon: 'info'
+		});
 		jQuery('#reminder-postpone-'+record.id).on('click', function(e) {
 			jQuery(e.currentTarget).closest('.notificationHeader').find('[data-notify="dismiss"]').trigger('click');
 			app.request.post({

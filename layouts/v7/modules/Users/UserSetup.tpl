@@ -15,7 +15,7 @@
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 			<link REL="SHORTCUT ICON" HREF="layouts/v7/skins/images/favicon.ico">
-			<link rel="stylesheet" href="libraries/bootstrap-legacy/css/bootstrap.min.css" type="text/css" media="screen" />
+			<link rel="stylesheet" href="libraries/bootstrap-5.3.8-dist/css/bootstrap.min.css" type="text/css" media="screen" />
 			<link rel="stylesheet" href="resources/styles.css" type="text/css" media="screen" />
 			<link rel="stylesheet" href="libraries/jquery/select2/select2.css" />
 			<link rel="stylesheet" href="libraries/jquery/posabsolute-jQuery-Validation-Engine/css/validationEngine.jquery.css" />

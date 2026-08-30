@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.5, created on 2026-08-29 18:57:32
+/* Smarty version 4.5.5, created on 2026-08-30 07:39:18
   from '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/Header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.5',
-  'unifunc' => 'content_6a932b9c89c463_67654726',
+  'unifunc' => 'content_6a93de261e2b75_36631640',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '41efa5c61db19b661f2c4625ef58b0282dfa12d2' => 
     array (
       0 => '/Applications/XAMPP/xamppfiles/htdocs/vtigercrm/layouts/v7/modules/Vtiger/Header.tpl',
-      1 => 1752039682,
+      1 => 1788075196,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6a932b9c89c463_67654726 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6a93de261e2b75_36631640 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html><html><head><title><?php echo vtranslate($_smarty_tpl->tpl_vars['PAGETITLE']->value,$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</title><link rel="SHORTCUT ICON" href="layouts/v7/skins/images/favicon.ico"><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link type='text/css' rel='stylesheet' href='<?php echo vresource_url("libraries/bootstrap-legacy/css/bootstrap-responsive.min.css");?>
-'> <link type='text/css' rel='stylesheet' href='<?php echo vresource_url("layouts/v7/lib/todc/css/bootstrap.min.css");?>
-'><link type='text/css' rel='stylesheet' href='<?php echo vresource_url("layouts/v7/lib/todc/css/docs.min.css");?>
-'><link type='text/css' rel='stylesheet' href='<?php echo vresource_url("layouts/v7/lib/todc/css/todc-bootstrap.min.css");?>
+</title><link rel="SHORTCUT ICON" href="layouts/v7/skins/images/favicon.ico"><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><link type='text/css' rel='stylesheet' href='<?php echo vresource_url("layouts/v7/lib/modern/plugins/bootstrap-5.3.8-dist/css/bootstrap.min.css");?>
+'><link type='text/css' rel='stylesheet' href='<?php echo vresource_url("layouts/v7/lib/modern/css/listview.css");?>
+'><link type='text/css' rel='stylesheet' href='<?php echo vresource_url("layouts/v7/lib/modern/css/detailview.css");?>
+'><link type='text/css' rel='stylesheet' href='<?php echo vresource_url("layouts/v7/lib/modern/css/nav.css");?>
+'><link type='text/css' rel='stylesheet' href='<?php echo vresource_url("layouts/v7/lib/modern/css/editview.css");?>
+'><link rel="stylesheet" href="<?php echo vresource_url('layouts/v7/lib/sweetalert2/sweetalert2.min.css');?>
+"><link type='text/css' rel='stylesheet' href='<?php echo vresource_url("layouts/v7/lib/todc/css/docs.min.css");?>
 '><link type='text/css' rel='stylesheet' href='<?php echo vresource_url("layouts/v7/lib/font-awesome/css/font-awesome.min.css");?>
 '><link type='text/css' rel='stylesheet' href='<?php echo vresource_url("layouts/v7/lib/jquery/select2/select2.css");?>
 '><link type='text/css' rel='stylesheet' href='<?php echo vresource_url("layouts/v7/lib/select2-bootstrap/select2-bootstrap.css");?>
@@ -58,7 +61,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?><style type="tex
  src="<?php echo vresource_url('layouts/v7/lib/jquery/jquery.min.js');?>
 "><?php echo '</script'; ?>
 ><?php echo '<script'; ?>
- src="<?php echo vresource_url('layouts/v7/lib/jquery/jquery-migrate-1.4.1.js');?>
+ src="<?php echo vresource_url('layouts/v7/lib/jquery/jquery-migrate-3.5.2.js');?>
 "><?php echo '</script'; ?>
 ><?php echo '<script'; ?>
  type="text/javascript">var _META = { 'module': "<?php echo $_smarty_tpl->tpl_vars['MODULE']->value;?>

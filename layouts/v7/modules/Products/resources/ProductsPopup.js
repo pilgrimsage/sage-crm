@@ -35,7 +35,7 @@ Vtiger_Popup_Js("Product_PriceBooks_Popup_Js",{
 			var selectedRecords = thisInstance.readSelectedIds();
 			if((selectedRecords.length) == 0){
 				var message = app.vtranslate("JS_PLEASE_SELECT_ONE_RECORD");
-				bootbox.alert(message);
+				Swal.fire(message)
 				return;
 			}
             popupPageContentsContainer.vtValidate({onsubmit : false});

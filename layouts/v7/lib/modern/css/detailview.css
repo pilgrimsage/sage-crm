@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Modern skin — Detail View
+   Loads AFTER bootstrap5.min.css + listview.css. Safe layer, no markup change.
+   ========================================================================== */
+
+/* ---- record blocks ---- */
+.block{
+	background:var(--paper);
+	border:1px solid var(--line);
+	border-radius:var(--radius);
+	padding:16px 18px;
+	margin-bottom:14px;
+}
+.block h4{
+	font-family:'Space Grotesk',sans-serif;
+	font-size:14.5px;
+	font-weight:600;
+	color:var(--ink);
+	margin:0 0 8px;
+	display:flex;
+	align-items:center;
+	gap:8px;
+}
+.block hr{
+	border:none;
+	border-top:1px solid var(--line);
+	margin:0 0 12px;
+}
+
+/* block collapse arrows — replace dated png with css chevron, image hidden not removed */
+.block h4 img.blockToggle{
+	width:0;
+	height:0;
+	opacity:0;
+	position:relative;
+}
+.block h4 img.blockToggle[data-mode="hide"]::after,
+.block h4 img.blockToggle[data-mode="show"]::after{
+	content:'';
+	position:absolute;
+	left:0; top:2px;
+	width:7px; height:7px;
+	border-right:2px solid var(--muted);
+	border-bottom:2px solid var(--muted);
+}
+.block h4 img.blockToggle[data-mode="hide"]::after{ transform:rotate(-45deg); }
+.block h4 img.blockToggle[data-mode="show"]::after{ transform:rotate(45deg); }
+
+/* ---- field table ---- */
+.detailview-table{
+	width:100%;
+	border-collapse:collapse;
+	font-size:13.5px;
+}
+.detailview-table td.fieldLabel{
+	color:var(--muted);
+	font-size:12px;
+	font-weight:500;
+	text-transform:uppercase;
+	letter-spacing:.02em;
+	padding:9px 10px 9px 0;
+	vertical-align:top;
+	width:18%;
+}
+.detailview-table td.fieldValue{
+	color:var(--ink);
+	padding:9px 10px;
+	vertical-align:top;
+}
+.detailview-table td.fieldValue .value{
+	font-weight:400;
+}
+.detailview-table .editAction{
+	color:var(--muted);
+	margin-left:8px;
+}
+.detailview-table .editAction:hover{
+	color:var(--teal);
+}
+
+/* ---- detail header / title bar ---- */
+.detailViewTitle,
+#detailViewHeader{
+	background:var(--paper);
+	border:1px solid var(--line);
+	border-radius:var(--radius);
+	padding:14px 18px;
+	margin-bottom:14px;
+}
+
+/* action buttons row */
+#detailViewHeader .btn-default,
+.DetailViewActions .btn-default{
+	background:var(--paper);
+	border:1px solid var(--line);
+	color:var(--ink);
+	border-radius:6px;
+}
+#detailViewHeader .btn-default:hover,
+.DetailViewActions .btn-default:hover{
+	background:var(--mist);
+	border-color:var(--teal);
+}
+#detailViewHeader .btn-primary{
+	background:var(--teal);
+	border-color:var(--teal);
+}
+#detailViewHeader .btn-primary:hover{
+	background:var(--teal-deep);
+	border-color:var(--teal-deep);
+}
+
+/* tags */
+.detailViewTagList .label,
+.detailViewTagList .tag{
+	background:var(--teal-soft);
+	color:var(--teal-deep);
+	border-radius:20px;
+	padding:3px 10px;
+	font-size:12px;
+	font-weight:500;
+}
+
+/* related list tabs / panel — shared classnames, safe restyle */
+.relatedListHeader,
+.related-tab-container{
+	background:var(--paper);
+	border:1px solid var(--line);
+	border-radius:var(--radius);
+}
+.nav-tabs > li > a{
+	color:var(--muted);
+	border:none;
+	font-size:13px;
+	font-weight:500;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover{
+	color:var(--teal);
+	border-bottom:2px solid var(--teal);
+	background:transparent;
+}

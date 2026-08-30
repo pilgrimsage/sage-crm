@@ -18,7 +18,6 @@
 	<script type="text/javascript" src="libraries/jquery/jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
 	<script type="text/javascript" src="libraries/jquery/jquery.class.min.js"></script>
 	<script type="text/javascript" src="libraries/jquery/defunkt-jquery-pjax/jquery.pjax.js"></script>
-	<script type="text/javascript" src="libraries/jquery/jstorage.min.js"></script>
 	<script type="text/javascript" src="libraries/jquery/autosize/jquery.autosize-min.js"></script>
 
 	<script type="text/javascript" src="libraries/jquery/rochal-jQuery-slimScroll/slimScroll.min.js"></script>

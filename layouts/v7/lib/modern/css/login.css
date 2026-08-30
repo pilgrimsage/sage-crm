@@ -1,0 +1,177 @@
+body{
+    margin:0;
+    background:var(--paper,#fff);
+}
+.split{
+    display:flex;
+    min-height:100vh;
+}
+.brand{
+    flex:1 1 54%;
+    background:linear-gradient(160deg,#10151C 0%,#0A5C4B 120%);
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:56px;
+    position:relative;
+    overflow:hidden;
+}
+.brand-mark{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:600;
+    font-size:20px;
+    letter-spacing:.02em;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    z-index:2;
+}
+.brand-mark .dot{
+    width:9px;height:9px;border-radius:50%;
+    background:#7CF2C0;
+    box-shadow:0 0 0 4px rgba(124,242,192,.18);
+}
+.brand-copy{max-width:420px;z-index:2;}
+.brand-copy h1{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:600;
+    font-size:34px;
+    line-height:1.15;
+    margin:0 0 14px;
+}
+.brand-copy p{
+    color:rgba(255,255,255,.68);
+    font-size:15px;
+    line-height:1.6;
+    margin:0;
+}
+.brand-foot{z-index:2;color:rgba(255,255,255,.4);font-size:12.5px;}
+.formside{
+    flex:1 1 46%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px;
+    background:#fff;
+}
+.formcard{width:100%;max-width:360px;}
+.formcard h2{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:600;
+    font-size:24px;
+    margin:0 0 4px;
+    color:#10151C;
+}
+.formcard .sub{color:#6B7280;font-size:14px;margin-bottom:28px;}
+.field{position:relative;margin-bottom:18px;}
+.field input{
+    width:100%;
+    border:1px solid #E4E8E6;
+    border-radius:8px;
+    padding:14px;
+    font-size:14.5px;
+    color:#10151C;
+    background:#F4F6F5;
+    transition:border-color .15s ease,background .15s ease;
+    box-sizing:border-box;
+}
+.field input::placeholder{color:#6B7280;}
+.field input:focus{
+    outline:none;
+    border-color:#0E7C66;
+    background:#fff;
+    box-shadow:0 0 0 3px rgba(14,124,102,.12);
+}
+.field label{
+    display:block;
+    font-size:12.5px;
+    font-weight:500;
+    color:#6B7280;
+    margin-bottom:6px;
+}
+.row-between{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+.skin-select{
+    width:100%;
+    border:1px solid #E4E8E6;
+    border-radius:8px;
+    padding:11px 14px;
+    font-size:13.5px;
+    color:#10151C;
+    background:#F4F6F5;
+    box-sizing:border-box;
+}
+.forgot-link{font-size:13px;color:#0E7C66;text-decoration:none;font-weight:500;}
+.forgot-link:hover{text-decoration:underline;}
+.btn-signin{
+    width:100%;
+    background:#10151C;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:14px;
+    font-size:14.5px;
+    font-weight:600;
+    letter-spacing:.01em;
+    cursor:pointer;
+    transition:background .15s ease,transform .1s ease;
+}
+.btn-signin:hover{background:#0A5C4B;}
+.btn-signin:active{transform:scale(.99);}
+.err{
+    background:#FDECE7;
+    border:1px solid #F3B9A5;
+    color:#E4572E;
+    font-size:13px;
+    padding:10px 14px;
+    border-radius:8px;
+    margin-bottom:16px;
+}
+.ok{
+    background:#E8F7F1;
+    border:1px solid #9FE0C6;
+    color:#0E7C66;
+    font-size:13px;
+    padding:10px 14px;
+    border-radius:8px;
+    margin-bottom:16px;
+}
+.hide{display:none !important;}
+.foot-note{text-align:center;color:#6B7280;font-size:12px;margin-top:24px;}
+
+/* marketing panel */
+.mkt-block{margin-bottom:18px;}
+.mkt-block h4{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:15px;
+    font-weight:600;
+    margin:0 0 10px;
+    color:rgba(255,255,255,.9);
+}
+.mkt-slides{position:relative;min-height:110px;}
+.mkt-slide{
+    display:none;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:10px;
+    padding:14px 16px;
+}
+.mkt-slide.active{display:block;}
+.mkt-slide img{max-width:100%;border-radius:6px;margin-bottom:8px;}
+.mkt-slide h3{font-size:14px;margin:0 0 6px;color:#fff;}
+.mkt-slide a{color:#7CF2C0;font-size:12.5px;}
+.inactive-promo{text-align:center;color:rgba(255,255,255,.8);}
+.inactive-promo h4{color:#fff;margin:4px 0;}
+.inactive-promo img{max-width:85%;margin-top:20px;border-radius:8px;}
+
+@media (max-width:900px){
+    .split{flex-direction:column;}
+    .brand{flex:none;padding:32px;min-height:200px;}
+    .brand-copy h1{font-size:24px;}
+    .formside{padding:32px 24px;}
+}

@@ -14,8 +14,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 			<link REL="SHORTCUT ICON" HREF="layouts/v7/skins/images/favicon.ico">
-			<link rel="stylesheet" href="libraries/bootstrap-legacy/css/bootstrap.min.css" type="text/css" media="screen" />
-			<link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css" type="text/css" media="screen" />
+			<link rel="stylesheet" href="libraries/bootstrap-5.3.8-dist/css/bootstrap.min.css" type="text/css" media="screen" />
 			<style type="text/css">
 				{literal}
 					body{
@@ -255,7 +254,7 @@
 								jQuery(this).closest('.group-container').removeClass('selectedContainer').addClass('unSelectedContainer');
 								jQuery(".selectAll").attr('checked', false);
 							}
-							if (jQuery("input[type='checkbox']:checked").size() === jQuery("input[type='checkbox']").size() - 1) {
+							if (jQuery("input[type='checkbox']:checked").length === jQuery("input[type='checkbox']").length - 1) {
 								jQuery(".selectAll").attr('checked', true);
 							}
 						});

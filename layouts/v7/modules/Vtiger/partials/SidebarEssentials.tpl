@@ -62,7 +62,7 @@
                                          <a class="filterName listViewFilterElipsis" href="{$LISTVIEW_URL|cat:'&viewname='|cat:$CUSTOM_VIEW->getId()|cat:'&app='|cat:$SELECTED_MENU_CATEGORY}" oncontextmenu="return false;" data-filter-id="{$CUSTOM_VIEW->getId()}" title="{$VIEWNAME|@escape:'html'}">{$VIEWNAME|@escape:'html'}</a> 
                                             <div class="pull-right">
                                                 <span class="js-popover-container" style="cursor:pointer;">
-                                                    <span  class="fa fa-angle-down" rel="popover" data-toggle="popover" aria-expanded="true" 
+                                                    <span  class="fa fa-angle-down" rel="popover" data-bs-toggle="popover" aria-expanded="true" 
                                                         {if ($CUSTOM_VIEW->isMine() || $IS_ADMIN) && $CUSTOM_VIEW->get('viewname') neq 'All'}
                                                             data-deletable="{if $CUSTOM_VIEW->isDeletable()}true{else}false{/if}" 
                                                             data-editable="{if $CUSTOM_VIEW->isEditable()}true{else}false{/if}" 

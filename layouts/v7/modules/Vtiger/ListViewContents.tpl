@@ -62,7 +62,7 @@
 							{if !$SEARCH_MODE_RESULTS}
 					<div class="table-actions">
 						<div class="dropdown" style="float:left;">
-							<span class="input dropdown-toggle" data-toggle="dropdown" title="{vtranslate('LBL_CLICK_HERE_TO_SELECT_ALL_RECORDS',$MODULE)}">
+							<span class="input dropdown-toggle" data-bs-toggle="dropdown" title="{vtranslate('LBL_CLICK_HERE_TO_SELECT_ALL_RECORDS',$MODULE)}">
 								<input class="listViewEntriesMainCheckBox" type="checkbox">
 							</span>
 						</div>
@@ -83,7 +83,7 @@
 										 {/if}
 									 {/if}
 									 {if $MODULE eq 'Documents'}style="width: 10%;"{/if}
-									 data-toggle="tooltip" data-placement="bottom" data-container="body">
+									 data-bs-toggle="tooltip" data-placement="bottom" data-container="body">
 									<i class="fa fa-th-large"></i>
 								</div>
 							</div>
